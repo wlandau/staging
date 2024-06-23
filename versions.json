@@ -2,6 +2,8 @@
   {
     "package": "nanonext",
     "version_current": "1.1.0",
-    "hash_current": "54c1637c74e7941fbe9f152df70c0a25f8cd37f6"
+    "hash_current": "54c1637c74e7941fbe9f152df70c0a25f8cd37f6",
+    "version_highest": "1.1.0",
+    "hash_highest": "54c1637c74e7941fbe9f152df70c0a25f8cd37f6"
   }
 ]
