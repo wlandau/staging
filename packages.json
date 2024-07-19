@@ -1,7 +1,98 @@
 [
   {
+    "package": "adbcdrivermanager",
+    "url": "https://github.com/apache/arrow-adbc",
+    "subdir": "r/adbcdrivermanager",
+    "branch": "37f79efbcd1641e6906a36e76df57cb896f2bc68"
+  },
+  {
+    "package": "cmdstanr",
+    "url": "https://github.com/stan-dev/cmdstanr",
+    "branch": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"
+  },
+  {
+    "package": "crew",
+    "url": "https://github.com/wlandau/crew",
+    "branch": "8ca02085fb1880ad87788bd1eb0ca331da69e60e"
+  },
+  {
+    "package": "duckdb",
+    "url": "https://github.com/duckdb/duckdb-r",
+    "branch": "a0a7c456f2b74d53fba4309e4b54d1708912d680"
+  },
+  {
+    "package": "httpgd",
+    "url": "https://github.com/nx10/httpgd",
+    "branch": "b0a5ec38638ca69e3adbc7b24d815757e5f74817"
+  },
+  {
+    "package": "ichimoku",
+    "url": "https://github.com/shikokuchuo/ichimoku",
+    "branch": "5eff99f0bb55c0ff3b6b6a9eb67d690631b5c46b"
+  },
+  {
+    "package": "igraph",
+    "url": "https://github.com/igraph/rigraph",
+    "branch": "476886da2b41a4d937543278dc12044889c9d4ca"
+  },
+  {
+    "package": "later",
+    "url": "https://github.com/r-lib/later",
+    "branch": "0668a280c2d851fbff63da4e6a1def7fbcfb2f81"
+  },
+  {
+    "package": "mirai",
+    "url": "https://github.com/shikokuchuo/mirai",
+    "branch": "2b2c9120529ae40175f65d20bccdb8a3a967c7e5"
+  },
+  {
+    "package": "multitools",
+    "url": "https://github.com/r-multiverse/multitools",
+    "branch": "c73b933868d8c6884df4220c25779cd0874ec7de"
+  },
+  {
+    "package": "multiverse.internals",
+    "url": "https://github.com/r-multiverse/multiverse.internals",
+    "branch": "6c6d5019172a59d990ce131cf1bed077c8832920"
+  },
+  {
     "package": "nanonext",
     "url": "https://github.com/shikokuchuo/nanonext",
     "branch": "17536aa86996308095c6814a8ab2cbec9f5354fd"
+  },
+  {
+    "package": "polars",
+    "url": "https://github.com/pola-rs/r-polars",
+    "branch": "e10e2595a0d3b125ad3e743763245dbfffd0270b"
+  },
+  {
+    "package": "SBC",
+    "url": "https://github.com/hyunjimoon/SBC",
+    "branch": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8"
+  },
+  {
+    "package": "secretbase",
+    "url": "https://github.com/shikokuchuo/secretbase",
+    "branch": "5349047602e96efdd0730af1dc34d6f18e94eb20"
+  },
+  {
+    "package": "string2path",
+    "url": "https://github.com/yutannihilation/string2path",
+    "branch": "38ce124866879d485f667b7bf3d2a070e6cb37d3"
+  },
+  {
+    "package": "targetsketch",
+    "url": "https://github.com/wlandau/targetsketch",
+    "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
+  },
+  {
+    "package": "tidytensor",
+    "url": "https://github.com/oneilsh/tidytensor",
+    "branch": "14f5b87d2dfae20eb35cfd974adf660a4fd89980"
+  },
+  {
+    "package": "zstdlite",
+    "url": "https://github.com/coolbutuseless/zstdlite",
+    "branch": "585458ccbe36eaa179d8b30f04f1e3a91dc6b993"
   }
 ]
