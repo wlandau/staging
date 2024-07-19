@@ -21,6 +21,11 @@
     "branch": "a0a7c456f2b74d53fba4309e4b54d1708912d680"
   },
   {
+    "package": "glaredb",
+    "url": "https://github.com/eitsupi/r-glaredb",
+    "branch": "10e2d584c77e1b8fee74495cb4945041b9bbf694"
+  },
+  {
     "package": "httpgd",
     "url": "https://github.com/nx10/httpgd",
     "branch": "b0a5ec38638ca69e3adbc7b24d815757e5f74817"
