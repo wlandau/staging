@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "_linuxdevel": ["success"],
+    "_macbinary": ["success"],
+    "_wasmbinary": ["none"],
+    "_winbinary": ["success"],
+    "_status": ["success"],
+    "_buildurl": ["https://github.com/r-universe/r-multiverse-production/actions/runs/10011886249"]
+  },
+  "date": ["2024-07-19"],
+  "version": ["2.0.2"],
+  "remote_hash": ["476886da2b41a4d937543278dc12044889c9d4ca"]
+}

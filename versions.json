@@ -1,9 +1,128 @@
 [
   {
+    "package": "adbcdrivermanager",
+    "version_current": "0.13.0",
+    "hash_current": "37f79efbcd1641e6906a36e76df57cb896f2bc68",
+    "version_highest": "0.13.0",
+    "hash_highest": "37f79efbcd1641e6906a36e76df57cb896f2bc68"
+  },
+  {
+    "package": "cmdstanr",
+    "version_current": "0.8.1",
+    "hash_current": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288",
+    "version_highest": "0.8.1",
+    "hash_highest": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"
+  },
+  {
+    "package": "crew",
+    "version_current": "0.9.5",
+    "hash_current": "8ca02085fb1880ad87788bd1eb0ca331da69e60e",
+    "version_highest": "0.9.5",
+    "hash_highest": "8ca02085fb1880ad87788bd1eb0ca331da69e60e"
+  },
+  {
+    "package": "httpgd",
+    "version_current": "2.0.2",
+    "hash_current": "b0a5ec38638ca69e3adbc7b24d815757e5f74817",
+    "version_highest": "2.0.2",
+    "hash_highest": "b0a5ec38638ca69e3adbc7b24d815757e5f74817"
+  },
+  {
+    "package": "ichimoku",
+    "version_current": "1.5.3",
+    "hash_current": "5eff99f0bb55c0ff3b6b6a9eb67d690631b5c46b",
+    "version_highest": "1.5.3",
+    "hash_highest": "5eff99f0bb55c0ff3b6b6a9eb67d690631b5c46b"
+  },
+  {
+    "package": "igraph",
+    "version_current": "2.0.2",
+    "hash_current": "476886da2b41a4d937543278dc12044889c9d4ca",
+    "version_highest": "2.0.2",
+    "hash_highest": "476886da2b41a4d937543278dc12044889c9d4ca"
+  },
+  {
+    "package": "later",
+    "version_current": "1.3.2",
+    "hash_current": "0668a280c2d851fbff63da4e6a1def7fbcfb2f81",
+    "version_highest": "1.3.2",
+    "hash_highest": "0668a280c2d851fbff63da4e6a1def7fbcfb2f81"
+  },
+  {
+    "package": "mirai",
+    "version_current": "1.1.1",
+    "hash_current": "2b2c9120529ae40175f65d20bccdb8a3a967c7e5",
+    "version_highest": "1.1.1",
+    "hash_highest": "2b2c9120529ae40175f65d20bccdb8a3a967c7e5"
+  },
+  {
+    "package": "multitools",
+    "version_current": "0.1.1",
+    "hash_current": "c73b933868d8c6884df4220c25779cd0874ec7de",
+    "version_highest": "0.1.1",
+    "hash_highest": "c73b933868d8c6884df4220c25779cd0874ec7de"
+  },
+  {
+    "package": "multiverse.internals",
+    "version_current": "0.2.8",
+    "hash_current": "6c6d5019172a59d990ce131cf1bed077c8832920",
+    "version_highest": "0.2.8",
+    "hash_highest": "6c6d5019172a59d990ce131cf1bed077c8832920"
+  },
+  {
     "package": "nanonext",
     "version_current": "1.1.1",
     "hash_current": "17536aa86996308095c6814a8ab2cbec9f5354fd",
     "version_highest": "1.1.1",
     "hash_highest": "17536aa86996308095c6814a8ab2cbec9f5354fd"
+  },
+  {
+    "package": "polars",
+    "version_current": "0.18.0",
+    "hash_current": "e10e2595a0d3b125ad3e743763245dbfffd0270b",
+    "version_highest": "0.18.0",
+    "hash_highest": "e10e2595a0d3b125ad3e743763245dbfffd0270b"
+  },
+  {
+    "package": "SBC",
+    "version_current": "0.3.0.9000",
+    "hash_current": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8",
+    "version_highest": "0.3.0.9000",
+    "hash_highest": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8"
+  },
+  {
+    "package": "secretbase",
+    "version_current": "1.0.0",
+    "hash_current": "5349047602e96efdd0730af1dc34d6f18e94eb20",
+    "version_highest": "1.0.0",
+    "hash_highest": "5349047602e96efdd0730af1dc34d6f18e94eb20"
+  },
+  {
+    "package": "string2path",
+    "version_current": "0.1.7",
+    "hash_current": "38ce124866879d485f667b7bf3d2a070e6cb37d3",
+    "version_highest": "0.1.7",
+    "hash_highest": "38ce124866879d485f667b7bf3d2a070e6cb37d3"
+  },
+  {
+    "package": "targetsketch",
+    "version_current": "0.0.1",
+    "hash_current": "a199a734b16f91726698a19e5f147f57f79cb2b6",
+    "version_highest": "0.0.1",
+    "hash_highest": "a199a734b16f91726698a19e5f147f57f79cb2b6"
+  },
+  {
+    "package": "tidytensor",
+    "version_current": "1.0.0",
+    "hash_current": "14f5b87d2dfae20eb35cfd974adf660a4fd89980",
+    "version_highest": "1.0.0",
+    "hash_highest": "14f5b87d2dfae20eb35cfd974adf660a4fd89980"
+  },
+  {
+    "package": "zstdlite",
+    "version_current": "0.2.6",
+    "hash_current": "585458ccbe36eaa179d8b30f04f1e3a91dc6b993",
+    "version_highest": "0.2.6",
+    "hash_highest": "585458ccbe36eaa179d8b30f04f1e3a91dc6b993"
   }
 ]
