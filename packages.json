@@ -18,7 +18,7 @@
   {
     "package": "duckdb",
     "url": "https://github.com/duckdb/duckdb-r",
-    "branch": "a0a7c456f2b74d53fba4309e4b54d1708912d680"
+    "branch": "7d8ba88961d847bc2e95a350b214d22db6847f43"
   },
   {
     "package": "glaredb",
