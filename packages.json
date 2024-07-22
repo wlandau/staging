@@ -6,6 +6,12 @@
     "branch": "37f79efbcd1641e6906a36e76df57cb896f2bc68"
   },
   {
+    "package": "adbcflightsql",
+    "url": "https://github.com/apache/arrow-adbc",
+    "subdir": "r/adbcflightsql",
+    "branch": "37f79efbcd1641e6906a36e76df57cb896f2bc68"
+  },
+  {
     "package": "cmdstanr",
     "url": "https://github.com/stan-dev/cmdstanr",
     "branch": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"
