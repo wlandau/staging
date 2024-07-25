@@ -28,21 +28,21 @@ jobs:
           )
         shell: Rscript {0}
 
-      - name: Check out the universe.
+      - name: Check out the staging universe.
         uses: actions/checkout@v4
 
       - name: Record versions.
         run: |
           multiverse.internals::record_versions(
             versions = "versions.json",
-            repo = "https://production.r-multiverse.org"
+            repo = "https://staging.r-multiverse.org"
           )
         shell: Rscript {0}
 
       - name: Record issues.
         run: |
           multiverse.internals::record_issues(
-            repo = "https://production.r-multiverse.org",
+            repo = "https://staging.r-multiverse.org",
             versions = "versions.json",
             output = "issues"
           )
