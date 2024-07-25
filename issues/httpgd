@@ -5,7 +5,7 @@
     "_wasmbinary": ["none"],
     "_winbinary": ["success"],
     "_status": ["success"],
-    "_buildurl": ["https://github.com/r-universe/r-multiverse-production/actions/runs/10011880171"]
+    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/10095655989"]
   },
   "date": ["2024-07-19"],
   "version": ["2.0.2"],

@@ -5,7 +5,7 @@
     "_wasmbinary": ["none"],
     "_winbinary": ["success"],
     "_status": ["success"],
-    "_buildurl": ["https://github.com/r-universe/r-multiverse-production/actions/runs/10050604130"]
+    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/10095651897"]
   },
   "dependencies": {
     "adbcdrivermanager": []

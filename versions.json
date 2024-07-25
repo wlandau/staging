@@ -28,13 +28,6 @@
     "hash_highest": "8ca02085fb1880ad87788bd1eb0ca331da69e60e"
   },
   {
-    "package": "duckdb",
-    "version_current": "1.0.0-2",
-    "hash_current": "7d8ba88961d847bc2e95a350b214d22db6847f43",
-    "version_highest": "1.0.0-2",
-    "hash_highest": "7d8ba88961d847bc2e95a350b214d22db6847f43"
-  },
-  {
     "package": "glaredb",
     "version_current": "0.0.2",
     "hash_current": "10e2d584c77e1b8fee74495cb4945041b9bbf694",
