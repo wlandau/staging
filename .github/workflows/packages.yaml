@@ -28,7 +28,7 @@ jobs:
           )
         shell: Rscript {0}
 
-      - name: Check out production universe.
+      - name: Check out staging universe.
         uses: actions/checkout@v4
 
       - name: Check community universe.
@@ -37,12 +37,12 @@ jobs:
           repository: '${{ github.repository_owner }}/community'
           path: 'community'
 
-      - name: Update production packages.
+      - name: Update staging packages.
         run: |
-          multiverse.internals::update_production(
-            path_production = getwd(),
+          multiverse.internals::update_staging(
+            path_staging = getwd(),
             path_community = "community",
-            repo_production = "https://production.r-multiverse.org",
+            repo_staging = "https://staging.r-multiverse.org",
             repo_community = "https://community.r-multiverse.org",
             days_notice = 28L
           )
@@ -59,6 +59,6 @@ jobs:
           else
             git config --global user.name github-actions
             git config --global user.email actions@github.com
-            git commit -m "Update production packages"
+            git commit -m "Update staging packages"
             git push -u origin main
           fi
