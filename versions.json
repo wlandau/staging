@@ -71,10 +71,10 @@
   },
   {
     "package": "mirai",
-    "version_current": "1.1.1",
-    "hash_current": "2b2c9120529ae40175f65d20bccdb8a3a967c7e5",
-    "version_highest": "1.1.1",
-    "hash_highest": "2b2c9120529ae40175f65d20bccdb8a3a967c7e5"
+    "version_current": "1.2.0",
+    "hash_current": "f8cc736a0e5b6b76300da7cecec7a37fbc846215",
+    "version_highest": "1.2.0",
+    "hash_highest": "f8cc736a0e5b6b76300da7cecec7a37fbc846215"
   },
   {
     "package": "multitools",
@@ -92,10 +92,10 @@
   },
   {
     "package": "nanonext",
-    "version_current": "1.1.1",
-    "hash_current": "17536aa86996308095c6814a8ab2cbec9f5354fd",
-    "version_highest": "1.1.1",
-    "hash_highest": "17536aa86996308095c6814a8ab2cbec9f5354fd"
+    "version_current": "1.2.0",
+    "hash_current": "945bff42bc3647b168d0fbbf0bd0766da5dee4a0",
+    "version_highest": "1.2.0",
+    "hash_highest": "945bff42bc3647b168d0fbbf0bd0766da5dee4a0"
   },
   {
     "package": "polars",
