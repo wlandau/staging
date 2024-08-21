@@ -14,6 +14,20 @@
     "hash_highest": "37f79efbcd1641e6906a36e76df57cb896f2bc68"
   },
   {
+    "package": "audio.vadwebrtc",
+    "version_current": "0.2",
+    "hash_current": "c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba",
+    "version_highest": "0.2",
+    "hash_highest": "c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba"
+  },
+  {
+    "package": "audio.whisper",
+    "version_current": "0.4.1",
+    "hash_current": "4b5c6a288c0f46a4cdc47f50d2d35395d3e32194",
+    "version_highest": "0.4.1",
+    "hash_highest": "4b5c6a288c0f46a4cdc47f50d2d35395d3e32194"
+  },
+  {
     "package": "cmdstanr",
     "version_current": "0.8.1",
     "hash_current": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288",
@@ -85,10 +99,10 @@
   },
   {
     "package": "multiverse.internals",
-    "version_current": "0.2.9",
-    "hash_current": "198738df873fe136798779037f23c17029c585de",
-    "version_highest": "0.2.9",
-    "hash_highest": "198738df873fe136798779037f23c17029c585de"
+    "version_current": "0.2.10",
+    "hash_current": "2841e54e3550eb1442416854101e722d731910c2",
+    "version_highest": "0.2.10",
+    "hash_highest": "2841e54e3550eb1442416854101e722d731910c2"
   },
   {
     "package": "nanonext",
@@ -126,6 +140,13 @@
     "hash_highest": "825b313ca882410c19440aa8eb71b57a299dfc6d"
   },
   {
+    "package": "stantargets",
+    "version_current": "0.1.1",
+    "hash_current": "bbdda1b4a44a3d6a22041e03eed38f27319d8f32",
+    "version_highest": "0.1.1",
+    "hash_highest": "bbdda1b4a44a3d6a22041e03eed38f27319d8f32"
+  },
+  {
     "package": "string2path",
     "version_current": "0.1.7",
     "hash_current": "38ce124866879d485f667b7bf3d2a070e6cb37d3",
@@ -140,11 +161,25 @@
     "hash_highest": "a199a734b16f91726698a19e5f147f57f79cb2b6"
   },
   {
+    "package": "tidypolars",
+    "version_current": "0.9.0",
+    "hash_current": "b856d174d90010dde55a4348a1496ded797f40af",
+    "version_highest": "0.9.0",
+    "hash_highest": "b856d174d90010dde55a4348a1496ded797f40af"
+  },
+  {
     "package": "tidytensor",
     "version_current": "1.0.0",
     "hash_current": "14f5b87d2dfae20eb35cfd974adf660a4fd89980",
     "version_highest": "1.0.0",
     "hash_highest": "14f5b87d2dfae20eb35cfd974adf660a4fd89980"
+  },
+  {
+    "package": "tinytest",
+    "version_current": "1.4.2",
+    "hash_current": "30cc39ce7ad062b27526acfcf7d38b45ac97e1a2",
+    "version_highest": "1.4.2",
+    "hash_highest": "30cc39ce7ad062b27526acfcf7d38b45ac97e1a2"
   },
   {
     "package": "zstdlite",
