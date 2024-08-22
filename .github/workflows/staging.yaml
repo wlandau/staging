@@ -44,9 +44,8 @@ jobs:
           } else {
             print("Staging is not active. Leaving the Staging universe alone.")
           }
-          is_active <- tolower(as.character(is_active))
           cat(
-            paste0("staging_is_active=", is_active),
+            paste0("staging_is_active=", tolower(as.character(is_active))),
             file = Sys.getenv("GITHUB_OUTPUT"),
             append = TRUE
           )
