@@ -35,7 +35,10 @@ jobs:
         id: staging_is_active
         shell: Rscript {0}
         run: |
-          is_active <- multiverse.internals::staging_is_active()
+          is_active <- multiverse.internals::staging_is_active(
+            start = c("01-15", "04-15", "08-15", "10-15"),
+            today = Sys.Date()
+          )
           is_active <- tolower(as.character(is_active))
           cat(
             paste0("staging_is_active=", is_active),
