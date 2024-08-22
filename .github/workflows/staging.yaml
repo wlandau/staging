@@ -39,6 +39,11 @@ jobs:
             start = c("01-15", "04-15", "08-15", "10-15"),
             today = Sys.Date()
           )
+          if (is_active) {
+            print("Staging is active. Next step is to update the Staging universe.")
+          } else {
+            print("Staging is not active. Leaving the Staging universe alone.")
+          }
           is_active <- tolower(as.character(is_active))
           cat(
             paste0("staging_is_active=", is_active),
@@ -111,7 +116,7 @@ jobs:
       - name: Propose snapshot.
         shell: Rscript {0}
         run: |
-          propose_snapshot(
+          multiverse.internals::propose_snapshot(
             path_staging = getwd(),
             repo_staging = "https://staging.r-multiverse.org"
           )
