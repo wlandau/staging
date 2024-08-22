@@ -2,7 +2,6 @@
   "checks": {
     "_linuxdevel": ["success"],
     "_macbinary": ["success"],
-    "_wasmbinary": ["success"],
     "_winbinary": ["success"],
     "_status": ["failure"],
     "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/10095672656"]
