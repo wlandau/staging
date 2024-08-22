@@ -1,0 +1,129 @@
+name: checks
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  staging_is_active:
+    runs-on: macOS-latest
+    outputs:
+      staging_is_active: ${{ steps.staging_is_active.outputs.staging_is_active }}
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+
+    steps:
+      - name: Install R.
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install helper R package.
+        shell: Rscript {0}
+        run: |
+          install.packages(
+            pkgs = "multiverse.internals",
+            repos = c("https://cloud.r-project.org", "https://community.r-multiverse.org"),
+            type = "binary"
+          )
+        
+
+      - name: Check if Staging is active.
+        id: staging_is_active
+        shell: Rscript {0}
+        run: |
+          is_active <- multiverse.internals::staging_is_active()
+          is_active <- tolower(as.character(is_active))
+          cat(
+            paste0("staging_is_active=", is_active),
+            file = Sys.getenv("GITHUB_OUTPUT"),
+            append = TRUE
+          )
+
+  update_staging:
+    runs-on: macOS-latest
+    needs: staging_is_active
+    if: needs.staging_is_active.outputs.staging_is_active == 'true'
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+
+    steps:
+      - name: Install R.
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install helper R package.
+        run: |
+          install.packages(
+            pkgs = "multiverse.internals",
+            repos = c("https://cloud.r-project.org", "https://community.r-multiverse.org"),
+            type = "binary"
+          )
+        shell: Rscript {0}
+
+      - name: Check out the staging universe.
+        uses: actions/checkout@v4
+
+      - name: Record versions.
+        run: |
+          multiverse.internals::record_versions(
+            versions = "versions.json",
+            repo = "https://staging.r-multiverse.org"
+          )
+        shell: Rscript {0}
+
+      - name: Record issues.
+        run: |
+          multiverse.internals::record_issues(
+            repo = "https://staging.r-multiverse.org",
+            versions = "versions.json",
+            output = "issues"
+          )
+        shell: Rscript {0}
+
+      - name: Clone community universe.
+        uses: actions/checkout@v4
+        with:
+          repository: '${{ github.repository_owner }}/community'
+          path: 'community'
+
+      - name: Update staging packages.
+        shell: Rscript {0}
+        run: |
+          multiverse.internals::update_staging(
+            path_staging = getwd(),
+            path_community = "community",
+            repo_community = "https://community.r-multiverse.org"
+          )
+
+      - name: Remove community universe clone.
+        run: rm -rf community
+        
+      - name: Propose snapshot.
+        shell: Rscript {0}
+        run: |
+          propose_snapshot(
+            path_staging = getwd(),
+            repo_staging = "https://staging.r-multiverse.org"
+          )
+
+      - name: Commit and push changes.
+        run: |
+          git add *.json *.url
+          if [ -d issues ]; then
+            git add issues
+          fi
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git config --global user.name github-actions
+            git config --global user.email actions@github.com
+            git commit -m "Update issues"
+            git push -u origin main
+          fi
