@@ -36,7 +36,7 @@ jobs:
         shell: Rscript {0}
         run: |
           is_active <- multiverse.internals::staging_is_active(
-            start = c("01-15", "04-15", "08-15", "10-15"),
+            start = c("01-15", "04-15", "07-15", "10-15"),
             today = Sys.Date()
           )
           if (is_active) {
