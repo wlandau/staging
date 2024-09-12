@@ -117,7 +117,8 @@ jobs:
         run: |
           multiverse.internals::propose_snapshot(
             path_staging = getwd(),
-            repo_staging = "https://staging.r-multiverse.org"
+            repo_staging = "https://staging.r-multiverse.org",
+            types = "src"
           )
 
       - name: Commit and push changes.
