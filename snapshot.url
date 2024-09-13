@@ -1,1 +1,1 @@
-https://staging.r-multiverse.org/api/snapshot/zip?types=win,mac&packages=cmdstanr,crew,duckdb,httpgd,ichimoku,igraph,later,mirai,multitools,multiverse.internals,nanonext,rJavaEnv,secretbase,string2path,targetsketch,zstdlite
+https://staging.r-multiverse.org/api/snapshot/zip?types=src,win,mac&packages=cmdstanr,crew,duckdb,httpgd,ichimoku,igraph,later,mirai,multitools,multiverse.internals,nanonext,rJavaEnv,secretbase,string2path,targetsketch,zstdlite
