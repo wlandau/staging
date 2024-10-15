@@ -1,17 +1,38 @@
 [
   {
     "package": "adbcdrivermanager",
-    "version_current": "0.13.0",
-    "hash_current": "37f79efbcd1641e6906a36e76df57cb896f2bc68",
-    "version_highest": "0.13.0",
-    "hash_highest": "37f79efbcd1641e6906a36e76df57cb896f2bc68"
+    "version_current": "0.14.0",
+    "hash_current": "15f330ce93c90b650fc92cf13ce5d8bd747f094e",
+    "version_highest": "0.14.0",
+    "hash_highest": "15f330ce93c90b650fc92cf13ce5d8bd747f094e"
   },
   {
     "package": "adbcflightsql",
-    "version_current": "0.13.0",
-    "hash_current": "37f79efbcd1641e6906a36e76df57cb896f2bc68",
-    "version_highest": "0.13.0",
-    "hash_highest": "37f79efbcd1641e6906a36e76df57cb896f2bc68"
+    "version_current": "0.14.0",
+    "hash_current": "15f330ce93c90b650fc92cf13ce5d8bd747f094e",
+    "version_highest": "0.14.0",
+    "hash_highest": "15f330ce93c90b650fc92cf13ce5d8bd747f094e"
+  },
+  {
+    "package": "adbcsnowflake",
+    "version_current": "0.14.0",
+    "hash_current": "15f330ce93c90b650fc92cf13ce5d8bd747f094e",
+    "version_highest": "0.14.0",
+    "hash_highest": "15f330ce93c90b650fc92cf13ce5d8bd747f094e"
+  },
+  {
+    "package": "arrow",
+    "version_current": "17.0.0",
+    "hash_current": "6a2e19a852b367c72d7b12da4d104456491ed8b7",
+    "version_highest": "17.0.0",
+    "hash_highest": "6a2e19a852b367c72d7b12da4d104456491ed8b7"
+  },
+  {
+    "package": "asylum",
+    "version_current": "1.1.1",
+    "hash_current": "22064dd0822e007ef78cd29e9a118beb09e76da4",
+    "version_highest": "1.1.1",
+    "hash_highest": "22064dd0822e007ef78cd29e9a118beb09e76da4"
   },
   {
     "package": "audio.vadwebrtc",
@@ -35,6 +56,13 @@
     "hash_highest": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"
   },
   {
+    "package": "colorout",
+    "version_current": "1.3-2",
+    "hash_current": "6eca95213c6cb2fae1c2c4eaccf43de4c93a65b5",
+    "version_highest": "1.3-2",
+    "hash_highest": "6eca95213c6cb2fae1c2c4eaccf43de4c93a65b5"
+  },
+  {
     "package": "crew",
     "version_current": "0.9.5",
     "hash_current": "8ca02085fb1880ad87788bd1eb0ca331da69e60e",
@@ -50,10 +78,10 @@
   },
   {
     "package": "glaredb",
-    "version_current": "0.0.2",
-    "hash_current": "10e2d584c77e1b8fee74495cb4945041b9bbf694",
-    "version_highest": "0.0.2",
-    "hash_highest": "10e2d584c77e1b8fee74495cb4945041b9bbf694"
+    "version_current": "0.0.3",
+    "hash_current": "79616cba7ee97f99b4e734febbfd72b4a1d4e8e0",
+    "version_highest": "0.0.3",
+    "hash_highest": "79616cba7ee97f99b4e734febbfd72b4a1d4e8e0"
   },
   {
     "package": "httpgd",
@@ -77,11 +105,25 @@
     "hash_highest": "476886da2b41a4d937543278dc12044889c9d4ca"
   },
   {
+    "package": "IMD",
+    "version_current": "1.2.1",
+    "hash_current": "8cc26c4f70bf6e07c47bab089c7bad18c864223c",
+    "version_highest": "1.2.1",
+    "hash_highest": "8cc26c4f70bf6e07c47bab089c7bad18c864223c"
+  },
+  {
     "package": "later",
     "version_current": "1.3.2",
     "hash_current": "0668a280c2d851fbff63da4e6a1def7fbcfb2f81",
     "version_highest": "1.3.2",
     "hash_highest": "0668a280c2d851fbff63da4e6a1def7fbcfb2f81"
+  },
+  {
+    "package": "litedown",
+    "version_current": "0.2",
+    "hash_current": "6cec1c2ea1db1b27ffe2103bfd33dc0e4e4e7a8c",
+    "version_highest": "0.2",
+    "hash_highest": "6cec1c2ea1db1b27ffe2103bfd33dc0e4e4e7a8c"
   },
   {
     "package": "mirai",
@@ -105,6 +147,13 @@
     "hash_highest": "f7b8ac48f080e1484f4728913da8399702e0eeae"
   },
   {
+    "package": "nanoarrow",
+    "version_current": "0.6.0",
+    "hash_current": "33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd",
+    "version_highest": "0.6.0",
+    "hash_highest": "33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"
+  },
+  {
     "package": "nanonext",
     "version_current": "1.2.1",
     "hash_current": "45d573b21e5f2599ae81b5e88b50eb689d6cb85d",
@@ -113,10 +162,24 @@
   },
   {
     "package": "polars",
-    "version_current": "0.18.0",
-    "hash_current": "e10e2595a0d3b125ad3e743763245dbfffd0270b",
-    "version_highest": "0.18.0",
-    "hash_highest": "e10e2595a0d3b125ad3e743763245dbfffd0270b"
+    "version_current": "0.19.1",
+    "hash_current": "742d6ea74d40e645b9b9ef3d70b1bb7edf17d7a9",
+    "version_highest": "0.19.1",
+    "hash_highest": "742d6ea74d40e645b9b9ef3d70b1bb7edf17d7a9"
+  },
+  {
+    "package": "prophet",
+    "version_current": "1.1.6",
+    "hash_current": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02",
+    "version_highest": "1.1.6",
+    "hash_highest": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"
+  },
+  {
+    "package": "prqlr",
+    "version_current": "0.9.0",
+    "hash_current": "9bcc6ef530582844da1e8c8b5e3faa8477a5ecd2",
+    "version_highest": "0.9.0",
+    "hash_highest": "9bcc6ef530582844da1e8c8b5e3faa8477a5ecd2"
   },
   {
     "package": "rJavaEnv",
@@ -124,6 +187,13 @@
     "hash_current": "4948c0e3d3574ffe3b56606820c0313e9acbba38",
     "version_highest": "0.0.1",
     "hash_highest": "4948c0e3d3574ffe3b56606820c0313e9acbba38"
+  },
+  {
+    "package": "rlang",
+    "version_current": "1.1.4",
+    "hash_current": "ae699d14ce32444ecd797e287f9384faf3726c74",
+    "version_highest": "1.1.4",
+    "hash_highest": "ae699d14ce32444ecd797e287f9384faf3726c74"
   },
   {
     "package": "SBC",
@@ -162,10 +232,10 @@
   },
   {
     "package": "tidypolars",
-    "version_current": "0.9.0",
-    "hash_current": "b856d174d90010dde55a4348a1496ded797f40af",
-    "version_highest": "0.9.0",
-    "hash_highest": "b856d174d90010dde55a4348a1496ded797f40af"
+    "version_current": "0.10.1",
+    "hash_current": "f239f0a1aac4e57166416cfe54ebefba00dde0d8",
+    "version_highest": "0.10.1",
+    "hash_highest": "f239f0a1aac4e57166416cfe54ebefba00dde0d8"
   },
   {
     "package": "tidytensor",
@@ -180,6 +250,13 @@
     "hash_current": "30cc39ce7ad062b27526acfcf7d38b45ac97e1a2",
     "version_highest": "1.4.2",
     "hash_highest": "30cc39ce7ad062b27526acfcf7d38b45ac97e1a2"
+  },
+  {
+    "package": "unigd",
+    "version_current": "0.1.2",
+    "hash_current": "c7d55c984624bdf89e385a2d86fcb93c692b400c",
+    "version_highest": "0.1.2",
+    "hash_highest": "c7d55c984624bdf89e385a2d86fcb93c692b400c"
   },
   {
     "package": "zstdlite",

@@ -2,11 +2,11 @@
   "checks": {
     "_linuxdevel": ["failure"],
     "_macbinary": ["failure"],
-    "_winbinary": ["success"],
+    "_winbinary": ["failure"],
     "_status": ["success"],
-    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/11081574912"]
+    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/11337389306"]
   },
   "date": ["2024-07-19"],
-  "version": ["0.18.0"],
-  "remote_hash": ["e10e2595a0d3b125ad3e743763245dbfffd0270b"]
+  "version": ["0.19.1"],
+  "remote_hash": ["742d6ea74d40e645b9b9ef3d70b1bb7edf17d7a9"]
 }
