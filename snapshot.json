@@ -1,5 +1,10 @@
 [
   {
+    "package": "audio.vadwebrtc",
+    "url": "https://github.com/bnosac/audio.vadwebrtc",
+    "branch": "c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba"
+  },
+  {
     "package": "cmdstanr",
     "url": "https://github.com/stan-dev/cmdstanr",
     "branch": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"

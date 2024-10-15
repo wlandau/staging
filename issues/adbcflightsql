@@ -1,11 +1,4 @@
 {
-  "checks": {
-    "_linuxdevel": ["success"],
-    "_macbinary": ["none"],
-    "_winbinary": ["success"],
-    "_status": ["success"],
-    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/10095651897"]
-  },
   "dependencies": {
     "adbcdrivermanager": []
   },

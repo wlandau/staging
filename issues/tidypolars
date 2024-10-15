@@ -1,11 +1,4 @@
 {
-  "checks": {
-    "_linuxdevel": ["failure"],
-    "_macbinary": ["failure"],
-    "_winbinary": ["failure"],
-    "_status": ["success"],
-    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/10496833174"]
-  },
   "descriptions": {
     "remotes": ["markvanderloo/tinytest/pkg"]
   },
