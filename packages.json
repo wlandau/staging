@@ -122,7 +122,7 @@
   {
     "package": "polars",
     "url": "https://github.com/pola-rs/r-polars",
-    "branch": "742d6ea74d40e645b9b9ef3d70b1bb7edf17d7a9"
+    "branch": "4bd16001d935d2e0b6e7d15d7aac12dc1cc35ec9"
   },
   {
     "package": "prophet",
