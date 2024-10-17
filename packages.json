@@ -173,7 +173,7 @@
   {
     "package": "tidypolars",
     "url": "https://github.com/etiennebacher/tidypolars/",
-    "branch": "f239f0a1aac4e57166416cfe54ebefba00dde0d8"
+    "branch": "9144fbf40ca20f30509bad27068d4fca47a81b2e"
   },
   {
     "package": "tidytensor",
