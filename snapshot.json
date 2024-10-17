@@ -100,6 +100,11 @@
     "branch": "45d573b21e5f2599ae81b5e88b50eb689d6cb85d"
   },
   {
+    "package": "polars",
+    "url": "https://github.com/pola-rs/r-polars",
+    "branch": "4bd16001d935d2e0b6e7d15d7aac12dc1cc35ec9"
+  },
+  {
     "package": "prophet",
     "url": "https://github.com/facebook/prophet",
     "branch": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"
