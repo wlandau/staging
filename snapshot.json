@@ -140,6 +140,11 @@
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
   },
   {
+    "package": "tidypolars",
+    "url": "https://github.com/etiennebacher/tidypolars/",
+    "branch": "9144fbf40ca20f30509bad27068d4fca47a81b2e"
+  },
+  {
     "package": "unigd",
     "url": "https://github.com/nx10/unigd",
     "branch": "c7d55c984624bdf89e385a2d86fcb93c692b400c"
