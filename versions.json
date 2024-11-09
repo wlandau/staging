@@ -126,6 +126,13 @@
     "hash_highest": "6cec1c2ea1db1b27ffe2103bfd33dc0e4e4e7a8c"
   },
   {
+    "package": "milRex",
+    "version_current": "1.1.0",
+    "hash_current": "3a8c6096b0e162445f119fc2dfc46ff41d0089ba",
+    "version_highest": "1.1.0",
+    "hash_highest": "3a8c6096b0e162445f119fc2dfc46ff41d0089ba"
+  },
+  {
     "package": "mirai",
     "version_current": "1.2.0",
     "hash_current": "f8cc736a0e5b6b76300da7cecec7a37fbc846215",
