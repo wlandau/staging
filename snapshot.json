@@ -160,6 +160,11 @@
     "branch": "c7d55c984624bdf89e385a2d86fcb93c692b400c"
   },
   {
+    "package": "webseq",
+    "url": "https://github.com/stitam/webseq",
+    "branch": "b710f93da5b8dd8a30fa170cdf3da8da943fbae1"
+  },
+  {
     "package": "zstdlite",
     "url": "https://github.com/coolbutuseless/zstdlite",
     "branch": "585458ccbe36eaa179d8b30f04f1e3a91dc6b993"
