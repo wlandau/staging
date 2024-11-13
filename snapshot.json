@@ -1,5 +1,10 @@
 [
   {
+    "package": "adbcbigquery",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+  },
+  {
     "package": "adbcdrivermanager",
     "url": "https://github.com/apache/arrow-adbc",
     "branch": "15f330ce93c90b650fc92cf13ce5d8bd747f094e"
