@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "nanoarrow": ["adbcdrivermanager"]
+  },
+  "date": ["2024-11-14"],
+  "version": ["0.14.0"],
+  "remote_hash": ["15f330ce93c90b650fc92cf13ce5d8bd747f094e"]
+}

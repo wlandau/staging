@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "_linuxdevel": ["none"],
+    "_macbinary": ["success"],
+    "_winbinary": ["success"],
+    "_status": ["success"],
+    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/11829710924"]
+  },
+  "date": ["2024-11-14"],
+  "version": ["0.6.0"],
+  "remote_hash": ["33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"]
+}

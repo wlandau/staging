@@ -1,25 +1,5 @@
 [
   {
-    "package": "adbcbigquery",
-    "url": "https://github.com/apache/arrow-adbc",
-    "branch": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
-  },
-  {
-    "package": "adbcdrivermanager",
-    "url": "https://github.com/apache/arrow-adbc",
-    "branch": "15f330ce93c90b650fc92cf13ce5d8bd747f094e"
-  },
-  {
-    "package": "adbcflightsql",
-    "url": "https://github.com/apache/arrow-adbc",
-    "branch": "15f330ce93c90b650fc92cf13ce5d8bd747f094e"
-  },
-  {
-    "package": "adbcsnowflake",
-    "url": "https://github.com/apache/arrow-adbc",
-    "branch": "15f330ce93c90b650fc92cf13ce5d8bd747f094e"
-  },
-  {
     "package": "arrow",
     "url": "https://github.com/apache/arrow",
     "branch": "6a2e19a852b367c72d7b12da4d104456491ed8b7"
@@ -98,11 +78,6 @@
     "package": "multiverse.internals",
     "url": "https://github.com/r-multiverse/multiverse.internals",
     "branch": "f7b8ac48f080e1484f4728913da8399702e0eeae"
-  },
-  {
-    "package": "nanoarrow",
-    "url": "https://github.com/apache/arrow-nanoarrow",
-    "branch": "33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"
   },
   {
     "package": "nanonext",
