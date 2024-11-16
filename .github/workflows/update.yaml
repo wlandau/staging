@@ -1,59 +1,24 @@
-name: staging
+name: update
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    # 01-15 through 02-14:
+    - cron: '0 * 15-31 1 *' # minute 0 every hour in January day 15 and after
+    - cron: '0 * 1-14 2 *'  # minute 0 every hour in February day 14 and before
+    # 04-15 through 05-14:
+    - cron: '0 * 15-31 4 *' # minute 0 every hour in April day 15 and after
+    - cron: '0 * 1-14 5 *'  # minute 0 every hour in May day 14 and before
+    # 07-15 through 08-14:
+    - cron: '0 * 15-31 7 *' # minute 0 every hour in July day 15 and after
+    - cron: '0 * 1-14 8 *'  # minute 0 every hour in August day 14 and before
+    # 10-15 through 11-14:
+    - cron: '0 * 15-31 10 *' # minute 0 every hour in October day 15 and after
+    - cron: '0 * 1-14 11 *'  # minute 0 every hour in November day 14 and before
 
 jobs:
-  staging_is_active:
-    runs-on: macOS-latest
-    outputs:
-      staging_is_active: ${{ steps.staging_is_active.outputs.staging_is_active }}
-
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      R_KEEP_PKG_SOURCE: yes
-
-    steps:
-      - name: Install R.
-        uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
-
-      - name: Install helper R package.
-        shell: Rscript {0}
-        run: |
-          install.packages(
-            pkgs = "multiverse.internals",
-            repos = c("https://cloud.r-project.org", "https://community.r-multiverse.org"),
-            type = "binary"
-          )
-        
-
-      - name: Check if Staging is active.
-        id: staging_is_active
-        shell: Rscript {0}
-        run: |
-          is_active <- multiverse.internals::staging_is_active(
-            start = c("01-15", "04-15", "07-15", "10-15"),
-            today = Sys.Date()
-          )
-          if (is_active) {
-            print("Staging is active. Next step is to update the Staging universe.")
-          } else {
-            print("Staging is not active. Leaving the Staging universe alone.")
-          }
-          cat(
-            paste0("staging_is_active=", tolower(as.character(is_active))),
-            file = Sys.getenv("GITHUB_OUTPUT"),
-            append = TRUE
-          )
-
   update_staging:
     runs-on: macOS-latest
-    needs: staging_is_active
-    if: needs.staging_is_active.outputs.staging_is_active == 'true'
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -131,6 +96,6 @@ jobs:
           else
             git config --global user.name github-actions
             git config --global user.email actions@github.com
-            git commit -m "Update issues"
+            git commit -m "Update staging"
             git push -u origin main
           fi
