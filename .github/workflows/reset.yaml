@@ -4,21 +4,21 @@ on:
   workflow_dispatch:
   schedule:
     # 12-15 through 01-14:
-    - cron: '0 0 15-31 12 *' # at 0.00 every day in December day 15 and after
-    - cron: '0 0 1-14 1 *'  # at 0.00 every day in January day 14 and before
+    - cron: '0 0 15-31 12 *' # on the first minute of every day in December day 15 and after
+    - cron: '0 0 1-14 1 *'  # on the first minute of every day in January day 14 and before
     # 03-15 through 04-14:
-    - cron: '0 0 15-31 3 *' # at 0.00 every day in March day 15 and after
-    - cron: '0 0 1-14 4 *'  # at 0.00 every day in April day 14 and before
+    - cron: '0 0 15-31 3 *' # on the first minute of every day in March day 15 and after
+    - cron: '0 0 1-14 4 *'  # on the first minute of every day in April day 14 and before
     # 06-15 through 07-14:
-    - cron: '0 0 15-31 6 *' # at 0.00 every day in June day 15 and after
-    - cron: '0 0 1-14 7 *'  # at 0.00 every day in July day 14 and before
+    - cron: '0 0 15-31 6 *' # on the first minute of every day in June day 15 and after
+    - cron: '0 0 1-14 7 *'  # on the first minute of every day in July day 14 and before
     # 09-15 through 10-14:
-    - cron: '0 0 15-31 9 *' # at 0.00 every day in September day 15 and after
-    - cron: '0 0 1-14 10 *' # at 0.00 every day in October day 14 and before
+    - cron: '0 0 15-31 9 *' # on the first minute of every day in September day 15 and after
+    - cron: '0 0 1-14 10 *' # on the first minute of every day in October day 14 and before
 
 jobs:
   reset_staging:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
