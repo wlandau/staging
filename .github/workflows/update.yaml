@@ -65,6 +65,8 @@ jobs:
           multiverse.internals::record_nonstandard_licenses(
             repo = "https://community.r-multiverse.org",
             path = "nonstandard_licenses.json"
+          )
+        shell: Rscript {0}
 
       - name: Clone community universe.
         uses: actions/checkout@v4
