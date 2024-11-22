@@ -4,10 +4,7 @@
     "_macbinary": ["success"],
     "_winbinary": ["none"],
     "_status": ["success"],
-    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/11407256939"]
-  },
-  "dependencies": {
-    "nanoarrow": []
+    "_buildurl": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/11876493280"]
   },
   "date": ["2024-07-19"],
   "version": ["0.0.4"],

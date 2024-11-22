@@ -1,5 +1,25 @@
 [
   {
+    "package": "adbcbigquery",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+  },
+  {
+    "package": "adbcdrivermanager",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+  },
+  {
+    "package": "adbcflightsql",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+  },
+  {
+    "package": "adbcsnowflake",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+  },
+  {
     "package": "arrow",
     "url": "https://github.com/apache/arrow",
     "branch": "6a2e19a852b367c72d7b12da4d104456491ed8b7"
@@ -80,14 +100,14 @@
     "branch": "f7b8ac48f080e1484f4728913da8399702e0eeae"
   },
   {
+    "package": "nanoarrow",
+    "url": "https://github.com/apache/arrow-nanoarrow",
+    "branch": "33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"
+  },
+  {
     "package": "nanonext",
     "url": "https://github.com/shikokuchuo/nanonext",
     "branch": "45d573b21e5f2599ae81b5e88b50eb689d6cb85d"
-  },
-  {
-    "package": "polars",
-    "url": "https://github.com/pola-rs/r-polars",
-    "branch": "4bd16001d935d2e0b6e7d15d7aac12dc1cc35ec9"
   },
   {
     "package": "prophet",
@@ -123,11 +143,6 @@
     "package": "targetsketch",
     "url": "https://github.com/wlandau/targetsketch",
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
-  },
-  {
-    "package": "tidypolars",
-    "url": "https://github.com/etiennebacher/tidypolars/",
-    "branch": "9144fbf40ca20f30509bad27068d4fca47a81b2e"
   },
   {
     "package": "unigd",

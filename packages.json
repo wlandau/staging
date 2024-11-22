@@ -50,11 +50,6 @@
     "branch": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"
   },
   {
-    "package": "colorout",
-    "url": "https://github.com/jalvesaq/colorout",
-    "branch": "6eca95213c6cb2fae1c2c4eaccf43de4c93a65b5"
-  },
-  {
     "package": "crew",
     "url": "https://github.com/wlandau/crew",
     "branch": "8ca02085fb1880ad87788bd1eb0ca331da69e60e"
@@ -63,11 +58,6 @@
     "package": "duckdb",
     "url": "https://github.com/duckdb/duckdb-r",
     "branch": "7d8ba88961d847bc2e95a350b214d22db6847f43"
-  },
-  {
-    "package": "glaredb",
-    "url": "https://github.com/eitsupi/r-glaredb",
-    "branch": "349c5bb3a1fca6a8cefae381094b046c8ce028b2"
   },
   {
     "package": "httpgd",
@@ -133,7 +123,7 @@
   {
     "package": "polars",
     "url": "https://github.com/pola-rs/r-polars",
-    "branch": "4bd16001d935d2e0b6e7d15d7aac12dc1cc35ec9"
+    "branch": "a76b8d56e6f39a6157880069f9d32f3cc1f574d7"
   },
   {
     "package": "prophet",
@@ -157,19 +147,9 @@
     "branch": "ae699d14ce32444ecd797e287f9384faf3726c74"
   },
   {
-    "package": "SBC",
-    "url": "https://github.com/hyunjimoon/SBC",
-    "branch": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8"
-  },
-  {
     "package": "secretbase",
     "url": "https://github.com/shikokuchuo/secretbase",
     "branch": "825b313ca882410c19440aa8eb71b57a299dfc6d"
-  },
-  {
-    "package": "stantargets",
-    "url": "https://github.com/ropensci/stantargets",
-    "branch": "bbdda1b4a44a3d6a22041e03eed38f27319d8f32"
   },
   {
     "package": "string2path",
@@ -180,21 +160,6 @@
     "package": "targetsketch",
     "url": "https://github.com/wlandau/targetsketch",
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
-  },
-  {
-    "package": "taxizedb",
-    "url": "https://github.com/ropensci/taxizedb",
-    "branch": "5732f9777142cd0034b64d5ae8b9aea0605cfaab"
-  },
-  {
-    "package": "tidypolars",
-    "url": "https://github.com/etiennebacher/tidypolars/",
-    "branch": "9144fbf40ca20f30509bad27068d4fca47a81b2e"
-  },
-  {
-    "package": "tidytensor",
-    "url": "https://github.com/oneilsh/tidytensor",
-    "branch": "14f5b87d2dfae20eb35cfd974adf660a4fd89980"
   },
   {
     "package": "unigd",
