@@ -65,11 +65,6 @@
     "branch": "5d73b83f4bd70048d39b6b9c4bffaf02c8aab321"
   },
   {
-    "package": "DEPAHRI",
-    "url": "https://github.com/humaniverse/DEPAHRI",
-    "branch": "87459858693a051761b2a64de31a5d7c70d0dc5b"
-  },
-  {
     "package": "duckdb",
     "url": "https://github.com/duckdb/duckdb-r",
     "branch": "7d8ba88961d847bc2e95a350b214d22db6847f43"
