@@ -45,6 +45,11 @@
     "branch": "859a9b465e25e0ced329c36206488fb61382880c"
   },
   {
+    "package": "duckdb",
+    "url": "https://github.com/duckdb/duckdb-r",
+    "branch": "c043baa69d202263750bd19a14eb04f6e735c5b6"
+  },
+  {
     "package": "httpgd",
     "url": "https://github.com/nx10/httpgd",
     "branch": "b0a5ec38638ca69e3adbc7b24d815757e5f74817"
