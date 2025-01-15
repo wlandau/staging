@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "package": "multiverse.internals",
+    "url": "https://github.com/r-multiverse/multiverse.internals",
+    "branch": "f7b8ac48f080e1484f4728913da8399702e0eeae"
+  }
+]
