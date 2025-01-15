@@ -1,1 +1,211 @@
-[]
+{
+  "audio.whisper": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796343494"],
+      "issues": {
+        "linux x86_64 R-4.5.0": ["WARNING"],
+        "mac aarch64 R-4.4.2": ["WARNING"],
+        "mac x86_64 R-4.4.2": ["WARNING"],
+        "win x86_64 R-4.4.2": ["WARNING"]
+      }
+    },
+    "descriptions": {
+      "remotes": ["bnosac/audio.vadwebrtc"]
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.4.1"],
+    "remote_hash": ["4b5c6a288c0f46a4cdc47f50d2d35395d3e32194"]
+  },
+  "colorout": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796345143"],
+      "issues": {
+        "mac aarch64 R-4.4.2": ["WARNING"],
+        "mac x86_64 R-4.4.2": ["WARNING"],
+        "win R-release": ["MISSING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["1.3-2"],
+    "remote_hash": ["6eca95213c6cb2fae1c2c4eaccf43de4c93a65b5"]
+  },
+  "demographr": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796346827"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.0.1"],
+    "remote_hash": ["5d73b83f4bd70048d39b6b9c4bffaf02c8aab321"]
+  },
+  "geographr": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796350533"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["1.0.1"],
+    "remote_hash": ["ed416a6735f7c4d8da0b866260369e84c27319a2"]
+  },
+  "glaredb": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796351121"],
+      "issues": {
+        "win R-release": ["MISSING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.0.4"],
+    "remote_hash": ["349c5bb3a1fca6a8cefae381094b046c8ce028b2"]
+  },
+  "healthyr": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796351930"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.0.0.9000"],
+    "remote_hash": ["37a8c7844582bf6dbbc80bf960aa176e2c3e9435"]
+  },
+  "igraph": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796361115"],
+      "issues": {
+        "linux x86_64 R-4.5.0": ["ERROR"],
+        "mac aarch64 R-4.4.2": ["ERROR"],
+        "mac x86_64 R-4.4.2": ["ERROR"],
+        "win x86_64 R-4.4.2": ["ERROR"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["2.1.3"],
+    "remote_hash": ["e93ad7b9e651befc1e9d9d73a5e64d3c9aea41ab"]
+  },
+  "loneliness": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796365963"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.0.0.9000"],
+    "remote_hash": ["330d200bf9de4a76ca1e82e3d84a3c5aba946707"]
+  },
+  "SBC": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796378918"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.3.0.9000"],
+    "remote_hash": ["9ddc803105f5350dae6efb4ae2657e89d2a54aa8"]
+  },
+  "stantargets": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796380862"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "descriptions": {
+      "remotes": ["hyunjimoon/SBC", "stan-dev/cmdstanr"]
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.1.2"],
+    "remote_hash": ["638326106594be70c5f851c767349e4192740771"]
+  },
+  "taxizedb": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796383753"],
+      "issues": {
+        "linux R-4.5.0": ["ERROR"],
+        "mac R-4.4.2": ["ERROR"],
+        "win R-4.4.2": ["ERROR"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.3.1"],
+    "remote_hash": ["5732f9777142cd0034b64d5ae8b9aea0605cfaab"]
+  },
+  "tidypolars": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796384805"],
+      "issues": {
+        "linux R-devel": ["MISSING"],
+        "mac R-release": ["MISSING"],
+        "win R-release": ["MISSING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": [],
+    "remote_hash": []
+  },
+  "tidytensor": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796385646"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["1.0.0"],
+    "remote_hash": ["14f5b87d2dfae20eb35cfd974adf660a4fd89980"]
+  },
+  "webseq": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796388176"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.1"],
+    "remote_hash": ["b710f93da5b8dd8a30fa170cdf3da8da943fbae1"]
+  },
+  "wildfires": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796389692"],
+      "issues": {
+        "linux R-4.5.0": ["WARNING"],
+        "mac R-4.4.2": ["WARNING"],
+        "win R-4.4.2": ["WARNING"]
+      }
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.9.0"],
+    "remote_hash": ["228c24be602b16073ff2bc8096d5df9d42dc6ea1"]
+  },
+  "multiverse.internals": {
+    "dependencies": {
+      "igraph": []
+    },
+    "date": ["2025-01-15"],
+    "version": ["0.2.11"],
+    "remote_hash": ["f7b8ac48f080e1484f4728913da8399702e0eeae"]
+  }
+}
