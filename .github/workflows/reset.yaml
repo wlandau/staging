@@ -28,8 +28,19 @@ jobs:
       - name: Check out the staging universe.
         uses: actions/checkout@v4
 
+      - name: Clone multiverse.internals.
+        uses: actions/checkout@v4
+        with:
+          repository: '${{ github.repository_owner }}/multiverse.internals'
+          path: 'multiverse.internals'
+
       - name: Reset staging.
-        run: echo "[]" > packages.json
+        run: |
+          cd multiverse.internals
+          HASH=$(git rev-parse HEAD)
+          echo "[\n  {\n    \"package\" : \"multiverse.internals\",\n    \"url\" : \"https://github.com/r-multiverse/multiverse.internals\",\n    \"branch\":\"$HASH\"\n  }\n]" > packages.json
+          cd ..
+          rm -rf multiverse.internals
 
       - name: Commit and push changes.
         run: |
