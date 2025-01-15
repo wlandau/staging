@@ -38,9 +38,9 @@ jobs:
         run: |
           cd multiverse.internals
           HASH=$(git rev-parse HEAD)
-          echo "[\n  {\n    \"package\" : \"multiverse.internals\",\n    \"url\" : \"https://github.com/r-multiverse/multiverse.internals\",\n    \"branch\":\"$HASH\"\n  }\n]" > packages.json
           cd ..
           rm -rf multiverse.internals
+          echo "[{\"package\":\"multiverse.internals\",\"url\":\"https://github.com/r-multiverse/multiverse.internals\",\"branch\":\"$HASH\"}]" > packages.json
 
       - name: Commit and push changes.
         run: |
