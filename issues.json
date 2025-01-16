@@ -148,19 +148,6 @@
     "version": ["0.3.1"],
     "remote_hash": ["5732f9777142cd0034b64d5ae8b9aea0605cfaab"]
   },
-  "tidypolars": {
-    "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796384805"],
-      "issues": {
-        "linux R-devel": ["MISSING"],
-        "mac R-release": ["MISSING"],
-        "win R-release": ["MISSING"]
-      }
-    },
-    "date": ["2025-01-15"],
-    "version": [],
-    "remote_hash": []
-  },
   "tidytensor": {
     "checks": {
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/12796385646"],
