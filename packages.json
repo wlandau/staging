@@ -103,7 +103,7 @@
   {
     "package": "igraph",
     "url": "https://github.com/igraph/rigraph",
-    "branch": "e93ad7b9e651befc1e9d9d73a5e64d3c9aea41ab"
+    "branch": "affdf8c714ace2e3b66dbcaee24ca2211633f964"
   },
   {
     "package": "IMD",
