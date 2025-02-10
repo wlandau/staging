@@ -45,12 +45,6 @@
     "branch": "4b5c6a288c0f46a4cdc47f50d2d35395d3e32194"
   },
   {
-    "package": "bridgestan",
-    "url": "https://github.com/roualdes/bridgestan",
-    "branch": "b161ca7a1d417213b084c4a8c2d53fa44f7e8284",
-    "subdir": "R"
-  },
-  {
     "package": "cmdstanr",
     "url": "https://github.com/stan-dev/cmdstanr",
     "branch": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"
