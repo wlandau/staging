@@ -18,7 +18,7 @@
   },
   "bridgestan": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264123383"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274116707"],
       "issues": {
         "linux R-4.5.0": ["ERROR"],
         "mac R-4.4.2": ["ERROR"],
@@ -31,7 +31,7 @@
   },
   "colorout": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264124426"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274117021"],
       "issues": {
         "mac aarch64 R-4.4.2": ["WARNING"],
         "mac x86_64 R-4.4.2": ["WARNING"],
@@ -44,7 +44,7 @@
   },
   "demographr": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264122356"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274117704"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
         "mac R-4.4.2": ["WARNING"],
@@ -81,7 +81,7 @@
   },
   "healthyr": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264124068"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274117617"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
         "mac R-4.4.2": ["WARNING"],
@@ -94,7 +94,7 @@
   },
   "loneliness": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264120052"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274117542"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
         "mac R-4.4.2": ["WARNING"],
@@ -148,9 +148,22 @@
     "version": ["0.1.2"],
     "remote_hash": ["638326106594be70c5f851c767349e4192740771"]
   },
+  "taxizedb": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274117160"],
+      "issues": {
+        "linux R-4.5.0": ["ERROR"],
+        "mac R-4.4.2": ["ERROR"],
+        "win R-4.4.2": ["ERROR"]
+      }
+    },
+    "date": ["2025-02-11"],
+    "version": ["0.3.1"],
+    "remote_hash": ["5732f9777142cd0034b64d5ae8b9aea0605cfaab"]
+  },
   "tidytensor": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264121951"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274117180"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
         "mac R-4.4.2": ["WARNING"],
@@ -163,7 +176,7 @@
   },
   "webseq": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264119920"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274118612"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
         "mac R-4.4.2": ["WARNING"],
@@ -176,7 +189,7 @@
   },
   "wildfires": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13264124550"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274116898"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
         "mac R-4.4.2": ["WARNING"],

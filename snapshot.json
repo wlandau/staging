@@ -150,11 +150,6 @@
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
   },
   {
-    "package": "taxizedb",
-    "url": "https://github.com/ropensci/taxizedb",
-    "branch": "5732f9777142cd0034b64d5ae8b9aea0605cfaab"
-  },
-  {
     "package": "unigd",
     "url": "https://github.com/nx10/unigd",
     "branch": "c7d55c984624bdf89e385a2d86fcb93c692b400c"
