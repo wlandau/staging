@@ -60,6 +60,11 @@
     "branch": "223c74e74a188c2e3d0a57a0700bd44b2468f404"
   },
   {
+    "package": "igraph",
+    "url": "https://github.com/igraph/rigraph",
+    "branch": "affdf8c714ace2e3b66dbcaee24ca2211633f964"
+  },
+  {
     "package": "IMD",
     "url": "https://github.com/humaniverse/IMD",
     "branch": "8cc26c4f70bf6e07c47bab089c7bad18c864223c"
@@ -95,6 +100,11 @@
     "branch": "c73b933868d8c6884df4220c25779cd0874ec7de"
   },
   {
+    "package": "multiverse.internals",
+    "url": "https://github.com/r-multiverse/multiverse.internals",
+    "branch": "da4ecd2e5524f20585e2631f65c324c95650a2f5"
+  },
+  {
     "package": "nanoarrow",
     "url": "https://github.com/apache/arrow-nanoarrow",
     "branch": "33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"
@@ -113,11 +123,6 @@
     "package": "prophet",
     "url": "https://github.com/facebook/prophet",
     "branch": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"
-  },
-  {
-    "package": "prqlr",
-    "url": "https://github.com/PRQL/prqlc-r",
-    "branch": "9bcc6ef530582844da1e8c8b5e3faa8477a5ecd2"
   },
   {
     "package": "rJavaEnv",
@@ -143,6 +148,11 @@
     "package": "targetsketch",
     "url": "https://github.com/wlandau/targetsketch",
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
+  },
+  {
+    "package": "taxizedb",
+    "url": "https://github.com/ropensci/taxizedb",
+    "branch": "5732f9777142cd0034b64d5ae8b9aea0605cfaab"
   },
   {
     "package": "tidypolars",
