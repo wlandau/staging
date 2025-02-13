@@ -164,7 +164,7 @@
   {
     "package": "polars",
     "url": "https://github.com/pola-rs/r-polars",
-    "branch": "788bf80650de12bc9a091ae305feb841f8fc6a1c"
+    "branch": "815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"
   },
   {
     "package": "prophet",
