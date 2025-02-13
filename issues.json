@@ -105,20 +105,6 @@
     "version": ["0.0.0.9000"],
     "remote_hash": ["330d200bf9de4a76ca1e82e3d84a3c5aba946707"]
   },
-  "polars": {
-    "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518891"],
-      "issues": {
-        "linux x86_64 R-4.5.0": ["WARNING"],
-        "mac aarch64 R-4.4.2": ["WARNING"],
-        "mac x86_64 R-4.4.2": ["WARNING"],
-        "win x86_64 R-4.4.2": ["WARNING"]
-      }
-    },
-    "date": ["2025-02-11"],
-    "version": ["0.22.0"],
-    "remote_hash": ["788bf80650de12bc9a091ae305feb841f8fc6a1c"]
-  },
   "SBC": {
     "checks": {
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274517692"],
@@ -199,13 +185,5 @@
     "date": ["2025-01-15"],
     "version": ["0.9.0"],
     "remote_hash": ["228c24be602b16073ff2bc8096d5df9d42dc6ea1"]
-  },
-  "tidypolars": {
-    "dependencies": {
-      "polars": []
-    },
-    "date": ["2025-02-11"],
-    "version": ["0.12.0"],
-    "remote_hash": ["4508d4d25685eed1ecee8a9450c9b804b34311ef"]
   }
 }

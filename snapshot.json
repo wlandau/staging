@@ -115,6 +115,11 @@
     "branch": "a7394f4505097a4e1a2078ac6bc05fa23b1ea7bf"
   },
   {
+    "package": "polars",
+    "url": "https://github.com/pola-rs/r-polars",
+    "branch": "815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"
+  },
+  {
     "package": "prophet",
     "url": "https://github.com/facebook/prophet",
     "branch": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"
@@ -148,6 +153,11 @@
     "package": "targetsketch",
     "url": "https://github.com/wlandau/targetsketch",
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
+  },
+  {
+    "package": "tidypolars",
+    "url": "https://github.com/etiennebacher/tidypolars/",
+    "branch": "4508d4d25685eed1ecee8a9450c9b804b34311ef"
   },
   {
     "package": "unigd",
