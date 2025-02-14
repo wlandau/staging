@@ -186,14 +186,6 @@
     "version": ["0.9.0"],
     "remote_hash": ["228c24be602b16073ff2bc8096d5df9d42dc6ea1"]
   },
-  "arrow": {
-    "descriptions": {
-      "cran": ["18.1.0.1"]
-    },
-    "date": ["2025-02-14"],
-    "version": ["18.1.0"],
-    "remote_hash": ["6a0414bd9a91e890ec6a45369bf61f405180628c"]
-  },
   "asylum": {
     "descriptions": {
       "cran": ["1.1.2"]
