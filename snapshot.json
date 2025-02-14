@@ -20,16 +20,6 @@
     "branch": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
   },
   {
-    "package": "arrow",
-    "url": "https://github.com/apache/arrow",
-    "branch": "6a0414bd9a91e890ec6a45369bf61f405180628c"
-  },
-  {
-    "package": "asylum",
-    "url": "https://github.com/humaniverse/asylum",
-    "branch": "22064dd0822e007ef78cd29e9a118beb09e76da4"
-  },
-  {
     "package": "audio.vadwebrtc",
     "url": "https://github.com/bnosac/audio.vadwebrtc",
     "branch": "c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba"
@@ -63,11 +53,6 @@
     "package": "igraph",
     "url": "https://github.com/igraph/rigraph",
     "branch": "affdf8c714ace2e3b66dbcaee24ca2211633f964"
-  },
-  {
-    "package": "IMD",
-    "url": "https://github.com/humaniverse/IMD",
-    "branch": "8cc26c4f70bf6e07c47bab089c7bad18c864223c"
   },
   {
     "package": "jagstargets",
