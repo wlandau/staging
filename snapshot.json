@@ -20,6 +20,11 @@
     "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
+    "package": "arrow",
+    "url": "https://github.com/apache/arrow",
+    "branch": "272715f6df2a042d69881ffa03d5078c58e4b345"
+  },
+  {
     "package": "audio.vadwebrtc",
     "url": "https://github.com/bnosac/audio.vadwebrtc",
     "branch": "c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba"
@@ -33,6 +38,11 @@
     "package": "crew",
     "url": "https://github.com/wlandau/crew",
     "branch": "e28d0c782fbc22b3cd4129e5f30825a8a44c0f75"
+  },
+  {
+    "package": "duckdb",
+    "url": "https://github.com/duckdb/duckdb-r",
+    "branch": "d7b7108c2e526fa125669439cabc179021585d43"
   },
   {
     "package": "httpgd",
