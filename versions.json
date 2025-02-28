@@ -1,31 +1,31 @@
 [
   {
     "package": "adbcbigquery",
-    "version_current": "0.15.0",
-    "hash_current": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b",
-    "version_highest": "0.15.0",
-    "hash_highest": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+    "version_current": "0.16.0",
+    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
+    "version_highest": "0.16.0",
+    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "adbcdrivermanager",
-    "version_current": "0.15.0",
-    "hash_current": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b",
-    "version_highest": "0.15.0",
-    "hash_highest": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+    "version_current": "0.16.0",
+    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
+    "version_highest": "0.16.0",
+    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "adbcflightsql",
-    "version_current": "0.15.0",
-    "hash_current": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b",
-    "version_highest": "0.15.0",
-    "hash_highest": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+    "version_current": "0.16.0",
+    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
+    "version_highest": "0.16.0",
+    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "adbcsnowflake",
-    "version_current": "0.15.0",
-    "hash_current": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b",
-    "version_highest": "0.15.0",
-    "hash_highest": "4bd94e2f9b56ebed3aa2639ff515e758930c8c9b"
+    "version_current": "0.16.0",
+    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
+    "version_highest": "0.16.0",
+    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "arrow",
@@ -78,10 +78,10 @@
   },
   {
     "package": "crew",
-    "version_current": "0.10.2",
-    "hash_current": "859a9b465e25e0ced329c36206488fb61382880c",
-    "version_highest": "0.10.2",
-    "hash_highest": "859a9b465e25e0ced329c36206488fb61382880c"
+    "version_current": "1.0.0",
+    "hash_current": "e28d0c782fbc22b3cd4129e5f30825a8a44c0f75",
+    "version_highest": "1.0.0",
+    "hash_highest": "e28d0c782fbc22b3cd4129e5f30825a8a44c0f75"
   },
   {
     "package": "demographr",
@@ -183,10 +183,10 @@
   },
   {
     "package": "mirai",
-    "version_current": "2.0.0",
-    "hash_current": "645738f41fbfac835bbce76596d6f924ce3c9549",
-    "version_highest": "2.0.0",
-    "hash_highest": "645738f41fbfac835bbce76596d6f924ce3c9549"
+    "version_current": "2.1.0",
+    "hash_current": "892c17106eab9411c720b50aaa56750cf8463dfc",
+    "version_highest": "2.1.0",
+    "hash_highest": "892c17106eab9411c720b50aaa56750cf8463dfc"
   },
   {
     "package": "multitools",
@@ -197,10 +197,10 @@
   },
   {
     "package": "multiverse.internals",
-    "version_current": "0.3.5",
-    "hash_current": "da4ecd2e5524f20585e2631f65c324c95650a2f5",
-    "version_highest": "0.3.5",
-    "hash_highest": "da4ecd2e5524f20585e2631f65c324c95650a2f5"
+    "version_current": "0.3.7",
+    "hash_current": "41712237cb84447c1d2c668397bd0187faf90968",
+    "version_highest": "0.3.7",
+    "hash_highest": "41712237cb84447c1d2c668397bd0187faf90968"
   },
   {
     "package": "nanoarrow",
@@ -211,10 +211,10 @@
   },
   {
     "package": "nanonext",
-    "version_current": "1.4.0",
-    "hash_current": "a7394f4505097a4e1a2078ac6bc05fa23b1ea7bf",
-    "version_highest": "1.4.0",
-    "hash_highest": "a7394f4505097a4e1a2078ac6bc05fa23b1ea7bf"
+    "version_current": "1.5.1",
+    "hash_current": "71b26067dd5c73faac32168d5eacb0dc4979362e",
+    "version_highest": "1.5.1",
+    "hash_highest": "71b26067dd5c73faac32168d5eacb0dc4979362e"
   },
   {
     "package": "polars",
@@ -246,10 +246,10 @@
   },
   {
     "package": "rlang",
-    "version_current": "1.1.4",
-    "hash_current": "ae699d14ce32444ecd797e287f9384faf3726c74",
-    "version_highest": "1.1.4",
-    "hash_highest": "ae699d14ce32444ecd797e287f9384faf3726c74"
+    "version_current": "1.1.5",
+    "hash_current": "119ce823eabd4ce3e834af0e7de4601703fdc214",
+    "version_highest": "1.1.5",
+    "hash_highest": "119ce823eabd4ce3e834af0e7de4601703fdc214"
   },
   {
     "package": "SBC",
@@ -260,10 +260,10 @@
   },
   {
     "package": "secretbase",
-    "version_current": "1.0.3",
-    "hash_current": "f4d3180885e237d313f877f4fd5c9099ce731e89",
-    "version_highest": "1.0.3",
-    "hash_highest": "f4d3180885e237d313f877f4fd5c9099ce731e89"
+    "version_current": "1.0.4",
+    "hash_current": "4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4",
+    "version_highest": "1.0.4",
+    "hash_highest": "4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4"
   },
   {
     "package": "stantargets",
@@ -274,10 +274,10 @@
   },
   {
     "package": "string2path",
-    "version_current": "0.1.8",
-    "hash_current": "cf63b1c5c65177e09be2813026ddee995ece81b0",
-    "version_highest": "0.1.8",
-    "hash_highest": "cf63b1c5c65177e09be2813026ddee995ece81b0"
+    "version_current": "0.2.0",
+    "hash_current": "0187aba7afebd016d4d90a0f76c7032e74694e2c",
+    "version_highest": "0.2.0",
+    "hash_highest": "0187aba7afebd016d4d90a0f76c7032e74694e2c"
   },
   {
     "package": "targetsketch",

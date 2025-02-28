@@ -1,8 +1,38 @@
 [
   {
+    "package": "adbcbigquery",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+  },
+  {
+    "package": "adbcdrivermanager",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+  },
+  {
+    "package": "adbcflightsql",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+  },
+  {
+    "package": "adbcsnowflake",
+    "url": "https://github.com/apache/arrow-adbc",
+    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+  },
+  {
     "package": "audio.vadwebrtc",
     "url": "https://github.com/bnosac/audio.vadwebrtc",
     "branch": "c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba"
+  },
+  {
+    "package": "cmdstanr",
+    "url": "https://github.com/stan-dev/cmdstanr",
+    "branch": "02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"
+  },
+  {
+    "package": "crew",
+    "url": "https://github.com/wlandau/crew",
+    "branch": "e28d0c782fbc22b3cd4129e5f30825a8a44c0f75"
   },
   {
     "package": "httpgd",
@@ -10,9 +40,44 @@
     "branch": "b0a5ec38638ca69e3adbc7b24d815757e5f74817"
   },
   {
+    "package": "ichimoku",
+    "url": "https://github.com/shikokuchuo/ichimoku",
+    "branch": "223c74e74a188c2e3d0a57a0700bd44b2468f404"
+  },
+  {
+    "package": "igraph",
+    "url": "https://github.com/igraph/rigraph",
+    "branch": "affdf8c714ace2e3b66dbcaee24ca2211633f964"
+  },
+  {
+    "package": "jagstargets",
+    "url": "https://github.com/ropensci/jagstargets",
+    "branch": "fef92d0d74f6e9832459ce4bee69396bca21fd3f"
+  },
+  {
+    "package": "later",
+    "url": "https://github.com/r-lib/later",
+    "branch": "d83e4118e0909618f416008dad4f3b3b89eead64"
+  },
+  {
+    "package": "milRex",
+    "url": "https://github.com/datapumpernickel/milRex",
+    "branch": "3a8c6096b0e162445f119fc2dfc46ff41d0089ba"
+  },
+  {
+    "package": "mirai",
+    "url": "https://github.com/shikokuchuo/mirai",
+    "branch": "892c17106eab9411c720b50aaa56750cf8463dfc"
+  },
+  {
     "package": "multitools",
     "url": "https://github.com/r-multiverse/multitools",
     "branch": "c73b933868d8c6884df4220c25779cd0874ec7de"
+  },
+  {
+    "package": "multiverse.internals",
+    "url": "https://github.com/r-multiverse/multiverse.internals",
+    "branch": "41712237cb84447c1d2c668397bd0187faf90968"
   },
   {
     "package": "nanoarrow",
@@ -20,9 +85,19 @@
     "branch": "33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"
   },
   {
+    "package": "nanonext",
+    "url": "https://github.com/shikokuchuo/nanonext",
+    "branch": "71b26067dd5c73faac32168d5eacb0dc4979362e"
+  },
+  {
     "package": "polars",
     "url": "https://github.com/pola-rs/r-polars",
     "branch": "815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"
+  },
+  {
+    "package": "prophet",
+    "url": "https://github.com/facebook/prophet",
+    "branch": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"
   },
   {
     "package": "prqlr",
@@ -35,14 +110,39 @@
     "branch": "bae1c6dea15b2f7750ae78d87ab0012a7772081f"
   },
   {
+    "package": "rlang",
+    "url": "https://github.com/r-lib/rlang",
+    "branch": "119ce823eabd4ce3e834af0e7de4601703fdc214"
+  },
+  {
+    "package": "secretbase",
+    "url": "https://github.com/shikokuchuo/secretbase",
+    "branch": "4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4"
+  },
+  {
+    "package": "string2path",
+    "url": "https://github.com/yutannihilation/string2path",
+    "branch": "0187aba7afebd016d4d90a0f76c7032e74694e2c"
+  },
+  {
     "package": "targetsketch",
     "url": "https://github.com/wlandau/targetsketch",
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
   },
   {
+    "package": "tidypolars",
+    "url": "https://github.com/etiennebacher/tidypolars/",
+    "branch": "4508d4d25685eed1ecee8a9450c9b804b34311ef"
+  },
+  {
     "package": "unigd",
     "url": "https://github.com/nx10/unigd",
     "branch": "c7d55c984624bdf89e385a2d86fcb93c692b400c"
+  },
+  {
+    "package": "webchem",
+    "url": "https://github.com/ropensci/webchem",
+    "branch": "5c177df9bd91d969e10da94a9c468933f899d140"
   },
   {
     "package": "zstdlite",
