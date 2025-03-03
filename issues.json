@@ -57,11 +57,11 @@
   },
   "geographr": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518773"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631291130"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
@@ -70,7 +70,7 @@
   },
   "glaredb": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518917"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631294365"],
       "issues": {
         "win R-release": ["MISSING"]
       }
@@ -128,13 +128,24 @@
     "version": ["0.0.0.9000"],
     "remote_hash": ["330d200bf9de4a76ca1e82e3d84a3c5aba946707"]
   },
+  "polars": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631292126"],
+      "issues": {
+        "linux x86_64 R-4.5.0": ["ERROR"]
+      }
+    },
+    "date": ["2025-03-03"],
+    "version": ["0.22.1"],
+    "remote_hash": ["815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"]
+  },
   "SBC": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274517692"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631292054"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
@@ -211,5 +222,13 @@
     "date": ["2025-02-14"],
     "version": ["1.2.1"],
     "remote_hash": ["8cc26c4f70bf6e07c47bab089c7bad18c864223c"]
+  },
+  "tidypolars": {
+    "dependencies": {
+      "polars": []
+    },
+    "date": ["2025-03-03"],
+    "version": ["0.12.0"],
+    "remote_hash": ["4508d4d25685eed1ecee8a9450c9b804b34311ef"]
   }
 }

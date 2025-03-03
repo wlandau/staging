@@ -95,11 +95,6 @@
     "branch": "71b26067dd5c73faac32168d5eacb0dc4979362e"
   },
   {
-    "package": "polars",
-    "url": "https://github.com/pola-rs/r-polars",
-    "branch": "815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"
-  },
-  {
     "package": "prophet",
     "url": "https://github.com/facebook/prophet",
     "branch": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"
@@ -138,11 +133,6 @@
     "package": "taxizedb",
     "url": "https://github.com/ropensci/taxizedb",
     "branch": "5732f9777142cd0034b64d5ae8b9aea0605cfaab"
-  },
-  {
-    "package": "tidypolars",
-    "url": "https://github.com/etiennebacher/tidypolars/",
-    "branch": "4508d4d25685eed1ecee8a9450c9b804b34311ef"
   },
   {
     "package": "unigd",
