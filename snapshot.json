@@ -45,11 +45,6 @@
     "branch": "d7b7108c2e526fa125669439cabc179021585d43"
   },
   {
-    "package": "httpgd",
-    "url": "https://github.com/nx10/httpgd",
-    "branch": "b0a5ec38638ca69e3adbc7b24d815757e5f74817"
-  },
-  {
     "package": "ichimoku",
     "url": "https://github.com/shikokuchuo/ichimoku",
     "branch": "223c74e74a188c2e3d0a57a0700bd44b2468f404"
@@ -138,6 +133,11 @@
     "package": "targetsketch",
     "url": "https://github.com/wlandau/targetsketch",
     "branch": "a199a734b16f91726698a19e5f147f57f79cb2b6"
+  },
+  {
+    "package": "taxizedb",
+    "url": "https://github.com/ropensci/taxizedb",
+    "branch": "5732f9777142cd0034b64d5ae8b9aea0605cfaab"
   },
   {
     "package": "tidypolars",

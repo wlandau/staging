@@ -1,12 +1,12 @@
 {
   "audio.whisper": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518140"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631291863"],
       "issues": {
         "linux x86_64 R-4.5.0": ["WARNING"],
-        "mac aarch64 R-4.4.2": ["WARNING"],
-        "mac x86_64 R-4.4.2": ["WARNING"],
-        "win x86_64 R-4.4.2": ["WARNING"]
+        "mac aarch64 R-4.4.3": ["WARNING"],
+        "mac x86_64 R-4.4.3": ["WARNING"],
+        "win x86_64 R-4.4.3": ["WARNING"]
       }
     },
     "descriptions": {
@@ -18,11 +18,11 @@
   },
   "bridgestan": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518914"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631294616"],
       "issues": {
         "linux R-4.5.0": ["ERROR"],
-        "mac R-4.4.2": ["ERROR"],
-        "win R-4.4.2": ["ERROR"]
+        "mac R-4.4.3": ["ERROR"],
+        "win R-4.4.3": ["ERROR"]
       }
     },
     "date": ["2025-01-18"],
@@ -31,10 +31,10 @@
   },
   "colorout": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274519085"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631291451"],
       "issues": {
-        "mac aarch64 R-4.4.2": ["WARNING"],
-        "mac x86_64 R-4.4.2": ["WARNING"],
+        "mac aarch64 R-4.4.3": ["WARNING"],
+        "mac x86_64 R-4.4.3": ["WARNING"],
         "win R-release": ["MISSING"]
       }
     },
@@ -44,11 +44,11 @@
   },
   "demographr": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518815"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631294174"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
@@ -81,20 +81,32 @@
   },
   "healthyr": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518637"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631291664"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
     "version": ["0.0.0.9000"],
     "remote_hash": ["37a8c7844582bf6dbbc80bf960aa176e2c3e9435"]
   },
+  "httpgd": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631293331"],
+      "issues": {
+        "mac aarch64 R-4.4.3": ["ERROR"],
+        "mac x86_64 R-4.4.3": ["ERROR"]
+      }
+    },
+    "date": ["2025-03-03"],
+    "version": ["2.0.2"],
+    "remote_hash": ["b0a5ec38638ca69e3adbc7b24d815757e5f74817"]
+  },
   "litedown": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13590162440"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631294307"],
       "issues": {
         "source": ["FAILURE"]
       }
@@ -105,11 +117,11 @@
   },
   "loneliness": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518251"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631291834"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
@@ -131,11 +143,11 @@
   },
   "stantargets": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274517988"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631291646"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "descriptions": {
@@ -145,26 +157,13 @@
     "version": ["0.1.2"],
     "remote_hash": ["638326106594be70c5f851c767349e4192740771"]
   },
-  "taxizedb": {
-    "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274517860"],
-      "issues": {
-        "linux R-4.5.0": ["ERROR"],
-        "mac R-4.4.2": ["ERROR"],
-        "win R-4.4.2": ["ERROR"]
-      }
-    },
-    "date": ["2025-02-11"],
-    "version": ["0.3.1"],
-    "remote_hash": ["5732f9777142cd0034b64d5ae8b9aea0605cfaab"]
-  },
   "tidytensor": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518035"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631292332"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
@@ -173,11 +172,11 @@
   },
   "webseq": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274517590"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631292544"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
@@ -186,11 +185,11 @@
   },
   "wildfires": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274519132"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631291486"],
       "issues": {
         "linux R-4.5.0": ["WARNING"],
-        "mac R-4.4.2": ["WARNING"],
-        "win R-4.4.2": ["WARNING"]
+        "mac R-4.4.3": ["WARNING"],
+        "win R-4.4.3": ["WARNING"]
       }
     },
     "date": ["2025-01-15"],
