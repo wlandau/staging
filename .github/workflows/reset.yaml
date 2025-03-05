@@ -17,7 +17,7 @@ on:
     - cron: '0 0 1-14 11 *' # on the first minute of every day in November day 14 and before
 
 jobs:
-  reset_staging:
+  reset:
     runs-on: ubuntu-latest
 
     env:
