@@ -61,5 +61,4 @@ jobs:
       - name: Upload snapshot.
         run: |
           rclone sync src/contrib production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib --progress
-          rclone sync bin production:${{ secrets.CLOUDFLARE_BUCKET }}/bin --progress
           rclone copy meta.json production:${{ secrets.CLOUDFLARE_BUCKET }}/meta.json --progress
