@@ -25,10 +25,10 @@ name: production
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 12 15 3 *'  # 6:00 AM on March 15
-    - cron: '0 12 15 6 *'  # 6:00 AM on June 15
-    - cron: '0 12 15 9 *'  # 6:00 AM on September 15
-    - cron: '0 12 15 12 *' # 6:00 AM on December 15
+    - cron: '0 12 15 3 *'  # 12:00 PM on March 15
+    - cron: '0 12 15 6 *'  # 12:00 PM on June 15
+    - cron: '0 12 15 9 *'  # 12:00 PM on September 15
+    - cron: '0 12 15 12 *' # 12:00 PM on December 15
 
 jobs:
   production:
