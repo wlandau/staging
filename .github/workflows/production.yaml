@@ -61,7 +61,7 @@ jobs:
       - name: Upload snapshot.
         run: |
           rclone sync src/contrib production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib \
-            -exclude PACKAGES --exclude PACKAGES --ignore-existing \
+            -exclude PACKAGES --exclude PACKAGES \
             --checkers 8 --transfers 8 \
             --progress
           rclone copy src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib/PACKAGES --progress
