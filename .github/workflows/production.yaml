@@ -1,0 +1,78 @@
+# MIT License
+# 
+# Copyright (c) 2024 Jeroen Ooms
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+
+name: production
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 15 3 *'  # 12:00 PM on March 15
+    - cron: '0 12 15 6 *'  # 12:00 PM on June 15
+    - cron: '0 12 15 9 *'  # 12:00 PM on September 15
+    - cron: '0 12 15 12 *' # 12:00 PM on December 15
+
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+
+    steps:
+      - name: Check out the staging universe.
+        uses: actions/checkout@v4
+
+      - name: Configure rclone.
+        run: |
+          rclone config create production s3 \
+            provider=Cloudflare \
+            access_key_id=${{ secrets.CLOUDFLARE_ACCESS_KEY_ID }} \
+            secret_access_key=${{ secrets.SECRET_CLOUDFLARE_ACCESS_KEY }} \
+            endpoint=https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            acl=private \
+            no_check_bucket=true
+
+      - name: Download snapshot.
+        run: |
+          cat snapshot.url | xargs curl -Lo snapshot.zip
+          unzip snapshot.zip && rm -f snapshot.zip
+
+      - name: Upload sources.
+        run: |
+          rclone sync src/contrib production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib \
+            --checkers 8 --transfers 8 \
+            --progress \
+            --exclude PACKAGES --exclude PACKAGES
+      
+      - name: Upload metadata.
+        run: |
+          rclone copy src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib/PACKAGES --progress
+          rclone copy src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib/PACKAGES.gz --progress
+          rclone copy meta.json production:${{ secrets.CLOUDFLARE_BUCKET }}/meta.json --progress
+
+      - name: Upload binaries.
+        run: |
+          rclone sync bin production:${{ secrets.CLOUDFLARE_BUCKET }}/bin \
+            --checkers 8 --transfers 8 \
+            --progress
