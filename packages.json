@@ -111,6 +111,10 @@
     "branch": "8cc26c4f70bf6e07c47bab089c7bad18c864223c"
   },
   {
+    "package": "INLA",
+    "url": "https://github.com/inbo/INLA"
+  },
+  {
     "package": "jagstargets",
     "url": "https://github.com/ropensci/jagstargets",
     "branch": "fef92d0d74f6e9832459ce4bee69396bca21fd3f"
@@ -148,7 +152,7 @@
   {
     "package": "multiverse.internals",
     "url": "https://github.com/r-multiverse/multiverse.internals",
-    "branch": "41712237cb84447c1d2c668397bd0187faf90968"
+    "branch": "688903f37fa4c46329afd30e98c9c1b2d5c194d5"
   },
   {
     "package": "nanoarrow",
@@ -191,11 +195,6 @@
     "package": "SBC",
     "url": "https://github.com/hyunjimoon/SBC",
     "branch": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8"
-  },
-  {
-    "package": "secretbase",
-    "url": "https://github.com/shikokuchuo/secretbase",
-    "branch": "4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4"
   },
   {
     "package": "stantargets",

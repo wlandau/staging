@@ -2,26 +2,31 @@
   {
     "package": "adbcbigquery",
     "url": "https://github.com/apache/arrow-adbc",
+    "subdir": "r/adbcbigquery",
     "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "adbcdrivermanager",
     "url": "https://github.com/apache/arrow-adbc",
+    "subdir": "r/adbcdrivermanager",
     "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "adbcflightsql",
     "url": "https://github.com/apache/arrow-adbc",
+    "subdir": "r/adbcflightsql",
     "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "adbcsnowflake",
     "url": "https://github.com/apache/arrow-adbc",
+    "subdir": "r/adbcsnowflake",
     "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
   },
   {
     "package": "arrow",
     "url": "https://github.com/apache/arrow",
+    "subdir": "r",
     "branch": "272715f6df2a042d69881ffa03d5078c58e4b345"
   },
   {
@@ -82,11 +87,12 @@
   {
     "package": "multiverse.internals",
     "url": "https://github.com/r-multiverse/multiverse.internals",
-    "branch": "41712237cb84447c1d2c668397bd0187faf90968"
+    "branch": "688903f37fa4c46329afd30e98c9c1b2d5c194d5"
   },
   {
     "package": "nanoarrow",
     "url": "https://github.com/apache/arrow-nanoarrow",
+    "subdir": "r",
     "branch": "33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"
   },
   {
@@ -95,8 +101,14 @@
     "branch": "71b26067dd5c73faac32168d5eacb0dc4979362e"
   },
   {
+    "package": "polars",
+    "url": "https://github.com/pola-rs/r-polars",
+    "branch": "815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"
+  },
+  {
     "package": "prophet",
     "url": "https://github.com/facebook/prophet",
+    "subdir": "R",
     "branch": "2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"
   },
   {
@@ -115,11 +127,6 @@
     "branch": "119ce823eabd4ce3e834af0e7de4601703fdc214"
   },
   {
-    "package": "secretbase",
-    "url": "https://github.com/shikokuchuo/secretbase",
-    "branch": "4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4"
-  },
-  {
     "package": "string2path",
     "url": "https://github.com/yutannihilation/string2path",
     "branch": "0187aba7afebd016d4d90a0f76c7032e74694e2c"
@@ -133,6 +140,11 @@
     "package": "taxizedb",
     "url": "https://github.com/ropensci/taxizedb",
     "branch": "5732f9777142cd0034b64d5ae8b9aea0605cfaab"
+  },
+  {
+    "package": "tidypolars",
+    "url": "https://github.com/etiennebacher/tidypolars/",
+    "branch": "4508d4d25685eed1ecee8a9450c9b804b34311ef"
   },
   {
     "package": "unigd",
