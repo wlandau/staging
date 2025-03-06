@@ -89,10 +89,7 @@ jobs:
       - name: Propose snapshot.
         shell: Rscript {0}
         run: |
-          multiverse.internals::propose_snapshot(
-            path_staging = getwd(),
-            repo_staging = "https://staging.r-multiverse.org"
-          )
+          multiverse.internals::propose_snapshot(path_staging = getwd())
 
       - name: Commit and push changes.
         run: |
