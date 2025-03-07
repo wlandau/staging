@@ -52,7 +52,7 @@ jobs:
         run: sudo apt-get update
 
       - name: Install R package system dependencies.
-        run: libcurl4-openssl-dev libglpk-dev
+        run: sudo apt-get install libcurl4-openssl-dev libglpk-dev
     
       - name: Install Rclone.
         run: sudo -v; curl https://rclone.org/install.sh | sudo bash
@@ -91,19 +91,18 @@ jobs:
 
       - name: Upload sources.
         run: |
-          rclone sync src/contrib production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib \
+          rclone sync src/contrib production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib \
             --checkers 8 --transfers 8 \
             --progress \
             --exclude PACKAGES --exclude PACKAGES
       
       - name: Upload metadata.
         run: |
-          rclone copy src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib/PACKAGES --progress
-          rclone copy src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/src/contrib/PACKAGES.gz --progress
-          rclone copy meta.json production:${{ secrets.CLOUDFLARE_BUCKET }}/meta.json --progress
+          rclone sync src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib/PACKAGES --progress
+          rclone sync src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib/PACKAGES.gz --progress
 
       - name: Upload binaries.
         run: |
-          rclone sync bin production:${{ secrets.CLOUDFLARE_BUCKET }}/bin \
+          rclone sync bin production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/bin \
             --checkers 8 --transfers 8 \
             --progress
