@@ -67,7 +67,7 @@ jobs:
         run: echo "DATE=$(R -e 'multiverse.internals::date_snapshot()')" >> $GITHUB_ENV
 
       - name: Print target snapshot date.
-        run: echo "Target snapshot date: $DATE"
+        run: echo $DATE
 
       - name: Check out the staging universe.
         uses: actions/checkout@v4
