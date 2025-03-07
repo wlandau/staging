@@ -25,22 +25,23 @@ jobs:
       R_KEEP_PKG_SOURCE: yes
 
     steps:
-      - name: Check out the staging universe.
+      - name: Clone the Staging universe.
         uses: actions/checkout@v4
 
-      - name: Clone multiverse.internals.
+      - name: Clone the Community universe.
         uses: actions/checkout@v4
         with:
-          repository: '${{ github.repository_owner }}/multiverse.internals'
-          path: 'multiverse.internals'
+          repository: '${{ github.repository_owner }}/community'
+          path: 'community'
 
-      - name: Reset staging.
-        run: |
-          cd multiverse.internals
-          HASH=$(git rev-parse HEAD)
-          cd ..
-          rm -rf config.json freeze.json multiverse.internals
-          echo "[{\"package\":\"multiverse.internals\",\"url\":\"https://github.com/r-multiverse/multiverse.internals\",\"branch\":\"$HASH\"}]" > packages.json
+      - name: Sync Staging with Community.
+        run: cp community/packages.json packages.json
+
+      - name: Unfreeze all packages.
+        run: rm -rf config.json freeze.json
+
+      - name: Clean up.
+        run: rm -rf community
 
       - name: Commit and push changes.
         run: |
