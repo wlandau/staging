@@ -40,6 +40,15 @@ jobs:
         run: install.packages("multiverse.internals")
         shell: Rscript {0}
 
+      - name: Store Staging start date as environment variable.
+        run: echo "DATE=$(Rscript -e 'cat(multiverse.internals::date_staging())')" >> $GITHUB_ENV
+
+      - name: Print Staging start date.
+        run: echo $DATE
+
+      - name: Stop the workflow if the p3m CRAN snapshot from the Staging start date does not exist yet.
+        run: curl -fsSI https://packagemanager.posit.co/cran/$DATE/src/contrib/PACKAGES || exit 1
+
       - name: Check out the staging universe.
         uses: actions/checkout@v4
 
