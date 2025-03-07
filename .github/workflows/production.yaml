@@ -25,10 +25,18 @@ name: production
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 12 15 3 *'  # 12:00 PM on March 15
-    - cron: '0 12 15 6 *'  # 12:00 PM on June 15
-    - cron: '0 12 15 9 *'  # 12:00 PM on September 15
-    - cron: '0 12 15 12 *' # 12:00 PM on December 15
+    # 02-15 through 03-15:
+    - cron: '0 0 15-31 2 *' # 12:00 AM on February 15 and after
+    - cron: '0 0 1-15 3 *'  # 12:00 AM on March 15 and before
+    # 05-15 through 06-15:
+    - cron: '0 0 15-31 5 *' # 12:00 AM on May 15 and after
+    - cron: '0 0 1-15 6 *'  # 12:00 AM on June 15 and before
+    # 08-15 through 09-15:
+    - cron: '0 0 15-31 8 *' # 12:00 AM on August 15 and after
+    - cron: '0 0 1-15 9 *'  # 12:00 AM on September 15 and before
+    # 11-15 through 12-15:
+    - cron: '0 0 15-31 11 *' # 12:00 AM on November 15 and after
+    - cron: '0 0 1-15 12 *'  # 12:00 AM on December 15 and before
 
 jobs:
   production:
@@ -54,9 +62,7 @@ jobs:
             no_check_bucket=true
 
       - name: Download snapshot.
-        run: |
-          cat snapshot.url | xargs curl -Lo snapshot.zip
-          unzip snapshot.zip && rm -f snapshot.zip
+        run: cat snapshot.url | xargs curl -sS | tar xv
 
       - name: Upload sources.
         run: |
