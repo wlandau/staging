@@ -196,6 +196,21 @@
     "version": ["1.2.1"],
     "remote_hash": ["8cc26c4f70bf6e07c47bab089c7bad18c864223c"]
   },
+  "INLA": {
+    "checks": {
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13710195681"],
+      "issues": {
+        "linux": ["MISSING"],
+        "mac": ["MISSING"],
+        "win": ["MISSING"],
+        "source": ["FAILURE"]
+      }
+    },
+    "success": [false],
+    "date": ["2025-03-07"],
+    "version": [],
+    "remote_hash": []
+  },
   "jagstargets": {
     "success": [true],
     "date": ["2025-03-06"],
@@ -256,8 +271,8 @@
   "multiverse.internals": {
     "success": [true],
     "date": ["2025-03-06"],
-    "version": ["0.3.7"],
-    "remote_hash": ["41712237cb84447c1d2c668397bd0187faf90968"]
+    "version": ["0.4.0"],
+    "remote_hash": ["688903f37fa4c46329afd30e98c9c1b2d5c194d5"]
   },
   "nanoarrow": {
     "success": [true],
