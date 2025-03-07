@@ -28,7 +28,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Store staging start date as environment variable.
-        run: echo "DATE=$(Rscript -e 'cat(multiverse.internals::date_staging())')" >> $GITHUB_ENV
+        run: echo "DATE=2026-01-01" >> $GITHUB_ENV
 
       - name: Print staging start date.
         run: echo $DATE
