@@ -64,7 +64,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Store snapshot date as environment variable.
-        run: echo "DATE=$(R -e 'multiverse.internals::date_snapshot()')" >> $GITHUB_ENV
+        run: echo "DATE=$(Rscript -e 'multiverse.internals::date_snapshot()')" >> $GITHUB_ENV
 
       - name: Print target snapshot date.
         run: echo $DATE
