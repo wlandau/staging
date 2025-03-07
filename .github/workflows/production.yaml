@@ -98,8 +98,8 @@ jobs:
       
       - name: Upload metadata.
         run: |
-          rclone sync src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib/PACKAGES --progress
-          rclone sync src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib/PACKAGES.gz --progress
+          rclone copy src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib/PACKAGES --progress
+          rclone copy src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib/PACKAGES.gz --progress
 
       - name: Upload binaries.
         run: |
