@@ -2,19 +2,6 @@ name: update
 
 on:
   workflow_dispatch:
-  schedule:
-    # 02-15 through 03-14:
-    - cron: '0 * 15-31 2 *' # minute 0 every hour in February day 15 and after
-    - cron: '0 * 1-14 3 *'  # minute 0 every hour in March day 14 and before
-    # 05-15 through 06-14:
-    - cron: '0 * 15-31 5 *' # minute 0 every hour in May day 15 and after
-    - cron: '0 * 1-14 6 *'  # minute 0 every hour in June day 14 and before
-    # 08-15 through 09-14:
-    - cron: '0 * 15-31 8 *' # minute 0 every hour in August day 15 and after
-    - cron: '0 * 1-14 9 *'  # minute 0 every hour in September day 14 and before
-    # 11-15 through 12-14:
-    - cron: '0 * 15-31 11 *' # minute 0 every hour in November day 15 and after
-    - cron: '0 * 1-14 12 *'  # minute 0 every hour in December day 14 and before
 
 jobs:
   update:
@@ -40,65 +27,11 @@ jobs:
         run: install.packages("multiverse.internals")
         shell: Rscript {0}
 
-      - name: Check out the staging universe.
-        uses: actions/checkout@v4
+      - name: Store staging start date as environment variable.
+        run: echo "DATE=$(Rscript -e 'cat(multiverse.internals::date_staging())')" >> $GITHUB_ENV
 
-      - name: Record versions.
-        run: |
-          multiverse.internals::record_versions(
-            versions = "versions.json",
-            repo = "https://staging.r-multiverse.org"
-          )
-        shell: Rscript {0}
+      - name: Print staging start date.
+        run: echo $DATE
 
-      - name: Record issues.
-        run: |
-          multiverse.internals::record_issues(
-            repo = "https://staging.r-multiverse.org",
-            versions = "versions.json",
-            output = "issues.json"
-          )
-        shell: Rscript {0}
-
-      - name: Record non-standard licenses.
-        run: |
-          multiverse.internals::record_nonstandard_licenses(
-            repo = "https://community.r-multiverse.org",
-            path = "nonstandard_licenses.json"
-          )
-        shell: Rscript {0}
-
-      - name: Clone community universe.
-        uses: actions/checkout@v4
-        with:
-          repository: '${{ github.repository_owner }}/community'
-          path: 'community'
-
-      - name: Update staging packages.
-        shell: Rscript {0}
-        run: |
-          multiverse.internals::update_staging(
-            path_staging = getwd(),
-            path_community = "community",
-            repo_community = "https://community.r-multiverse.org"
-          )
-
-      - name: Remove community universe clone.
-        run: rm -rf community
-        
-      - name: Propose snapshot.
-        shell: Rscript {0}
-        run: |
-          multiverse.internals::propose_snapshot(path_staging = getwd())
-
-      - name: Commit and push changes.
-        run: |
-          git add *.json *.txt *.url
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git config --global user.name github-actions
-            git config --global user.email actions@github.com
-            git commit -m "Update staging"
-            git push -u origin main
-          fi
+      - name: Stop workflow if the p3m CRAN snapshot for this Staging cycle does not exist yet.
+        run: curl -fsSI https://packagemanager.posit.co/cran/$DATE/src/contrib/PACKAGES || exit 1
