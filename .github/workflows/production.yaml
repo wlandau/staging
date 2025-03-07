@@ -100,6 +100,7 @@ jobs:
         run: |
           rclone copy src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib --progress
           rclone copy src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib --progress
+          rclone copy meta.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE --progress
 
       - name: Upload binaries.
         run: |
