@@ -111,5 +111,5 @@ jobs:
       - name: Update snapshot list.
         run: |
           rclone copy --include="*/meta.json" --max-depth 2 production:${{ secrets.CLOUDFLARE_BUCKET }}/ ./meta/
-          Jq -s 'add' ./meta/**/meta.json > snapshots.json
+          jq -s 'add' ./meta/**/meta.json > snapshots.json
           rclone copy snapshots.json production:${{ secrets.CLOUDFLARE_BUCKET }}
