@@ -72,7 +72,7 @@ jobs:
       - name: Record non-standard licenses.
         run: |
           multiverse.internals::record_nonstandard_licenses(
-            repo = "https://community.r-multiverse.org",
+            repo = "https://staging.r-multiverse.org",
             path = "nonstandard_licenses.json"
           )
         shell: Rscript {0}
