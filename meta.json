@@ -1,9 +1,9 @@
 [
   {
+    "r_version": "4.4",
     "date_staging": "2025-02-15",
     "date_snapshot": "2025-03-15",
-    "r_version": "4.4",
-    "r_multiverse": "https://production.r-multiverse.org/2025-03-15",
-    "cran": "https://packagemanager.posit.co/cran/2025-02-15"
+    "cran": "https://packagemanager.posit.co/cran/2025-02-15",
+    "r_multiverse": "https://production.r-multiverse.org/2025-03-15"
   }
 ]
