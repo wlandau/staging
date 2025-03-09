@@ -1,4 +1,4 @@
-name: update
+name: stage
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ on:
     - cron: '0 * 1-14 12 *'  # minute 0 every hour in December day 14 and before
 
 jobs:
-  update:
+  stage:
     runs-on: ubuntu-latest
 
     env:
@@ -37,17 +37,10 @@ jobs:
           use-public-rspm: true
 
       - name: Install helper R package.
-        run: install.packages("multiverse.internals")
+        run: |
+          install.packages("pak")
+          pak::pkg_install("r-multiverse/multiverse.internals@*release")
         shell: Rscript {0}
-
-      - name: Store Staging start date as environment variable.
-        run: echo "DATE=$(Rscript -e 'cat(multiverse.internals::date_staging())')" >> $GITHUB_ENV
-
-      - name: Print Staging start date.
-        run: echo $DATE
-
-      - name: Stop the workflow if the p3m CRAN snapshot from the Staging start date does not exist yet.
-        run: curl -fsSI https://packagemanager.posit.co/cran/$DATE/src/contrib/PACKAGES || exit 1
 
       - name: Check out the staging universe.
         uses: actions/checkout@v4
@@ -83,10 +76,10 @@ jobs:
           repository: '${{ github.repository_owner }}/community'
           path: 'community'
 
-      - name: Update staging packages.
+      - name: Stage packages.
         shell: Rscript {0}
         run: |
-          multiverse.internals::update_staging(
+          multiverse.internals::stage_candidates(
             path_staging = getwd(),
             path_community = "community",
             repo_community = "https://community.r-multiverse.org"
@@ -94,11 +87,6 @@ jobs:
 
       - name: Remove community universe clone.
         run: rm -rf community
-        
-      - name: Propose snapshot.
-        shell: Rscript {0}
-        run: |
-          multiverse.internals::propose_snapshot(path_staging = getwd())
 
       - name: Commit and push changes.
         run: |
