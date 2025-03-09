@@ -102,7 +102,7 @@ jobs:
         run: |
           rclone copy src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib --progress
           rclone copy src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib --progress
-          rclone copy meta.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE --progress
+          rclone copy snapshot.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE --progress
 
       - name: Upload binaries.
         run: |
@@ -112,6 +112,6 @@ jobs:
 
       - name: Update snapshot list.
         run: |
-          rclone copy --include="*/meta.json" --max-depth 2 production:${{ secrets.CLOUDFLARE_BUCKET }}/ ./meta/
-          jq -cs 'add' ./meta/**/meta.json > snapshots.json
+          rclone copy --include="*/meta.json" --max-depth 2 production:${{ secrets.CLOUDFLARE_BUCKET }}/ ./snapshots/
+          jq -cs 'add' ./snapshots/**/snapshot.json > snapshots.json
           rclone copy snapshots.json production:${{ secrets.CLOUDFLARE_BUCKET }}
