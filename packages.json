@@ -3,25 +3,25 @@
     "package": "adbcbigquery",
     "url": "https://github.com/apache/arrow-adbc",
     "subdir": "r/adbcbigquery",
-    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "branch": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "adbcdrivermanager",
     "url": "https://github.com/apache/arrow-adbc",
     "subdir": "r/adbcdrivermanager",
-    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "branch": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "adbcflightsql",
     "url": "https://github.com/apache/arrow-adbc",
     "subdir": "r/adbcflightsql",
-    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "branch": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "adbcsnowflake",
     "url": "https://github.com/apache/arrow-adbc",
     "subdir": "r/adbcsnowflake",
-    "branch": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "branch": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "arrow",
@@ -152,7 +152,7 @@
   {
     "package": "multiverse.internals",
     "url": "https://github.com/r-multiverse/multiverse.internals",
-    "branch": "688903f37fa4c46329afd30e98c9c1b2d5c194d5"
+    "branch": "ae919e610a6dc01bd85cee85166b2637a0569bd9"
   },
   {
     "package": "nanoarrow",
