@@ -2,26 +2,26 @@
   "adbcbigquery": {
     "success": [true],
     "date": ["2025-03-06"],
-    "version": ["0.16.0"],
-    "remote_hash": ["05c33a7700b981b3ce9097200a49357f8e9499ac"]
+    "version": ["0.17.0"],
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
   "adbcdrivermanager": {
     "success": [true],
     "date": ["2025-03-06"],
-    "version": ["0.16.0"],
-    "remote_hash": ["05c33a7700b981b3ce9097200a49357f8e9499ac"]
+    "version": ["0.17.0"],
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
   "adbcflightsql": {
     "success": [true],
     "date": ["2025-03-06"],
-    "version": ["0.16.0"],
-    "remote_hash": ["05c33a7700b981b3ce9097200a49357f8e9499ac"]
+    "version": ["0.17.0"],
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
   "adbcsnowflake": {
     "success": [true],
     "date": ["2025-03-06"],
-    "version": ["0.16.0"],
-    "remote_hash": ["05c33a7700b981b3ce9097200a49357f8e9499ac"]
+    "version": ["0.17.0"],
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
   "arrow": {
     "success": [true],
@@ -271,8 +271,8 @@
   "multiverse.internals": {
     "success": [true],
     "date": ["2025-03-06"],
-    "version": ["0.4.0"],
-    "remote_hash": ["688903f37fa4c46329afd30e98c9c1b2d5c194d5"]
+    "version": ["0.4.2"],
+    "remote_hash": ["ae919e610a6dc01bd85cee85166b2637a0569bd9"]
   },
   "nanoarrow": {
     "success": [true],
@@ -329,12 +329,6 @@
     "date": ["2025-01-15"],
     "version": ["0.3.0.9000"],
     "remote_hash": ["9ddc803105f5350dae6efb4ae2657e89d2a54aa8"]
-  },
-  "secretbase": {
-    "success": [true],
-    "date": ["2025-03-06"],
-    "version": ["1.0.4"],
-    "remote_hash": ["4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4"]
   },
   "stantargets": {
     "checks": {

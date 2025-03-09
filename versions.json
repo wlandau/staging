@@ -1,31 +1,31 @@
 [
   {
     "package": "adbcbigquery",
-    "version_current": "0.16.0",
-    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
-    "version_highest": "0.16.0",
-    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "version_current": "0.17.0",
+    "hash_current": "8b4ba558d1e9db9afbea6ef2d50acd979f647799",
+    "version_highest": "0.17.0",
+    "hash_highest": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "adbcdrivermanager",
-    "version_current": "0.16.0",
-    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
-    "version_highest": "0.16.0",
-    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "version_current": "0.17.0",
+    "hash_current": "8b4ba558d1e9db9afbea6ef2d50acd979f647799",
+    "version_highest": "0.17.0",
+    "hash_highest": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "adbcflightsql",
-    "version_current": "0.16.0",
-    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
-    "version_highest": "0.16.0",
-    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "version_current": "0.17.0",
+    "hash_current": "8b4ba558d1e9db9afbea6ef2d50acd979f647799",
+    "version_highest": "0.17.0",
+    "hash_highest": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "adbcsnowflake",
-    "version_current": "0.16.0",
-    "hash_current": "05c33a7700b981b3ce9097200a49357f8e9499ac",
-    "version_highest": "0.16.0",
-    "hash_highest": "05c33a7700b981b3ce9097200a49357f8e9499ac"
+    "version_current": "0.17.0",
+    "hash_current": "8b4ba558d1e9db9afbea6ef2d50acd979f647799",
+    "version_highest": "0.17.0",
+    "hash_highest": "8b4ba558d1e9db9afbea6ef2d50acd979f647799"
   },
   {
     "package": "arrow",
@@ -197,10 +197,10 @@
   },
   {
     "package": "multiverse.internals",
-    "version_current": "0.4.0",
-    "hash_current": "688903f37fa4c46329afd30e98c9c1b2d5c194d5",
-    "version_highest": "0.4.0",
-    "hash_highest": "688903f37fa4c46329afd30e98c9c1b2d5c194d5"
+    "version_current": "0.4.2",
+    "hash_current": "ae919e610a6dc01bd85cee85166b2637a0569bd9",
+    "version_highest": "0.4.2",
+    "hash_highest": "ae919e610a6dc01bd85cee85166b2637a0569bd9"
   },
   {
     "package": "nanoarrow",
@@ -257,13 +257,6 @@
     "hash_current": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8",
     "version_highest": "0.3.0.9000",
     "hash_highest": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8"
-  },
-  {
-    "package": "secretbase",
-    "version_current": "1.0.4",
-    "hash_current": "4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4",
-    "version_highest": "1.0.4",
-    "hash_highest": "4572dba2d8ca3c983d45211a3fb8dd4eb2dc2cc4"
   },
   {
     "package": "stantargets",
