@@ -1,0 +1,37 @@
+name: clean
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1-16 3 *'  # 12:00 AM on March 16
+    - cron: '0 0 1-16 6 *'  # 12:00 AM on June 16
+    - cron: '0 0 1-16 9 *'  # 12:00 AM on September 16
+    - cron: '0 0 1-16 12 *' # 12:00 AM on December 16
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+
+    steps:
+      - name: Check out the staging universe.
+        uses: actions/checkout@v4
+
+      - name: Remove config.json.
+        run: rm -f config.json
+
+      - name: Commit and push changes.
+        run: |
+          git add *.json *.url
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git config --global user.name github-actions
+            git config --global user.email actions@github.com
+            git commit -m "Clean up"
+            git push -u origin main
+          fi
