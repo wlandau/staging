@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-name: production
+name: snapshot
 
 on:
   workflow_dispatch:
@@ -39,7 +39,7 @@ on:
     - cron: '0 0 1-15 12 *'  # 12:00 AM on December 15 and before
 
 jobs:
-  production:
+  snapshot:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
 
@@ -64,10 +64,10 @@ jobs:
           use-public-rspm: true
 
       - name: Install helper R package.
+        shell: Rscript {0}
         run: |
           install.packages("pak")
           pak::pkg_install("r-multiverse/multiverse.internals@*release")
-        shell: Rscript {0}
 
       - name: Store snapshot date as environment variable.
         run: echo "DATE=$(Rscript -e 'cat(multiverse.internals::meta_snapshot()$snapshot)')" >> $GITHUB_ENV
