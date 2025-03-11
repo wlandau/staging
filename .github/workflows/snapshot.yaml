@@ -123,7 +123,7 @@ jobs:
               --include-from include-meta.txt \
               --ignore-size --progress
             Rscript -e 'multiverse.internals::filter_packages(path = "meta", staged = "staged.json")'
-            rclone copy meta r2-test:r-multiverse-test/$DATE \
+            rclone copy meta production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE \
               --include-from include-meta.txt \
               --ignore-size --progress
             rclone copy snapshot.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE --progress
