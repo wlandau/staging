@@ -1,10 +1,10 @@
 [
   {
-    "reset": "2025-01-15",
-    "staging": "2025-02-15",
+    "dependency_freeze": "2025-01-15",
+    "candidate_freeze": "2025-02-15",
     "snapshot": "2025-03-15",
     "r": "4.4",
-    "cran": "https://packagemanager.posit.co/cran/2025-02-15",
+    "cran": "https://packagemanager.posit.co/cran/2025-01-15",
     "r_multiverse": "https://production.r-multiverse.org/2025-03-15"
   }
 ]
