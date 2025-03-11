@@ -90,7 +90,7 @@ jobs:
 
       - name: Commit and push changes.
         run: |
-          git add *.json *.url
+          git add *.json *.txt
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to commit."
           else
