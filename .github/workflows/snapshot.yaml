@@ -46,6 +46,7 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
+      RCLONE_FLAGS: "--checkers 8 --transfers 8 --ignore-size --progress"
 
     steps:
       - name: Update existing system libraries.
@@ -111,22 +112,19 @@ jobs:
         run: |
           rclone copy staging: production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE \
             --include-from include-packages.txt \
-            --checkers 8 --transfers 8 \
-            --ignore-size --progress
+            $RCLONE_FLAGS
 
       - name: Upload metadata to finalize snapshots on March 15, June 15, September 15, and December 15.
         run: |
           TODAY=$(date +'%m-%d')
           if [[ "$TODAY" == "03-15" || "$TODAY" == "06-15" || "$TODAY" == "09-15" || "$TODAY" == "12-15" ]]; then
             echo "Finalizing Production snapshot on $TODAY."
-            rclone copy staging: meta \
-              --include-from include-meta.txt \
-              --ignore-size --progress
+            rclone copy staging: meta --include-from include-meta.txt $RCLONE_FLAGS
             Rscript -e 'multiverse.internals::filter_packages(path = "meta", staged = "staged.json")'
             rclone copy meta production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE \
               --include-from include-meta.txt \
-              --ignore-size --progress
-            rclone copy snapshot.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE --progress
+              $RCLONE_FLAGS
+            rclone copy snapshot.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE $RCLONE_FLAGS
           else
             echo "Skipping metadata upload, $TODAY is not a Production snapshot day."
             exit 0
@@ -134,6 +132,8 @@ jobs:
 
       - name: Update snapshot list.
         run: |
-          rclone copy --include="*/snapshot.json" --max-depth 2 production:${{ secrets.CLOUDFLARE_BUCKET }}/ ./snapshots/
+          rclone copy production:${{ secrets.CLOUDFLARE_BUCKET }}/ ./snapshots/ \
+            --include="*/snapshot.json" --max-depth 2 \
+            $RCLONE_FLAGS
           jq -cs 'add' ./snapshots/**/snapshot.json > snapshots.json
-          rclone copy snapshots.json production:${{ secrets.CLOUDFLARE_BUCKET }}
+          rclone copy snapshots.json production:${{ secrets.CLOUDFLARE_BUCKET }} $RCLONE_FLAGS
