@@ -70,23 +70,13 @@ jobs:
           )
         shell: Rscript {0}
 
-      - name: Clone community universe.
-        uses: actions/checkout@v4
-        with:
-          repository: '${{ github.repository_owner }}/community'
-          path: 'community'
-
       - name: Stage packages.
         shell: Rscript {0}
         run: |
           multiverse.internals::stage_candidates(
             path_staging = getwd(),
-            path_community = "community",
-            repo_community = "https://community.r-multiverse.org"
+            repo_staging = "https://staging.r-multiverse.org"
           )
-
-      - name: Remove community universe clone.
-        run: rm -rf community
 
       - name: Commit and push changes.
         run: |
