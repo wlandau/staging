@@ -117,7 +117,7 @@ jobs:
       - name: Upload metadata to finalize snapshots on March 15, June 15, September 15, and December 15.
         run: |
           TODAY=$(date +'%m-%d')
-          if [[ "$TODAY" == "03-11" || "$TODAY" == "06-15" || "$TODAY" == "09-15" || "$TODAY" == "12-15" ]]; then
+          if [[ "$TODAY" == "03-15" || "$TODAY" == "06-15" || "$TODAY" == "09-15" || "$TODAY" == "12-15" ]]; then
             echo "Finalizing Production snapshot on $TODAY."
             rclone copy staging: meta \
               --include-from include-meta.txt \
