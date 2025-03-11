@@ -91,6 +91,9 @@ jobs:
       - name: Download snapshot.
         run: cat snapshot.url | xargs curl -sS | tar xvzf -
 
+      - name: Debugging with tmate
+        uses: mxschmitt/action-tmate@v3.19
+
       - name: Upload packages.
         run: |
           for PATH in "src" "bin"
