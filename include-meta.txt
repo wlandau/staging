@@ -1,0 +1,6 @@
+src/contrib/PACKAGES
+bin/macosx/*/contrib/4.4/PACKAGES
+bin/windows/contrib/4.4/PACKAGES
+src/contrib/PACKAGES.gz
+bin/macosx/*/contrib/4.4/PACKAGES.gz
+bin/windows/contrib/4.4/PACKAGES.gz
