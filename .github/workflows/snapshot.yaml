@@ -93,9 +93,9 @@ jobs:
 
       - name: Upload packages.
         run: |
-          for PATH in "src" "bin"
+          for DIR in "src" "bin"
           do
-            rclone sync $PATH production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/$PATH \
+            rclone sync $DIR production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/$DIR \
               --exclude **PACKAGES --exclude **PACKAGES.gz \
               --checkers 8 --transfers 8 \
               --progress
@@ -106,9 +106,9 @@ jobs:
           TODAY=$(date +'%m-%d')
           if [[ "$TODAY" == "03-15" || "$TODAY" == "06-15" || "$TODAY" == "09-15" || "$TODAY" == "12-15" ]]; then
             echo "Finalizing Production snapshot on $TODAY."
-            for PATH in "src" "bin"
+            for DIR in "src" "bin"
             do
-              rclone copy $PATH production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/$PATH \
+              rclone copy $DIR production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/$DIR \
                 --include **PACKAGES --include **PACKAGES.gz \
                 --checkers 8 --transfers 8 \
                 --progress
