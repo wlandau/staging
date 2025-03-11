@@ -91,24 +91,33 @@ jobs:
       - name: Download snapshot.
         run: cat snapshot.url | xargs curl -sS | tar xvzf -
 
-      - name: Upload sources.
+      - name: Upload packages.
         run: |
-          rclone sync src/contrib production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib \
-            --checkers 8 --transfers 8 \
-            --progress \
-            --exclude PACKAGES --exclude PACKAGES
-      
-      - name: Upload metadata.
-        run: |
-          rclone copy src/contrib/PACKAGES production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib --progress
-          rclone copy src/contrib/PACKAGES.gz production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/src/contrib --progress
-          rclone copy snapshot.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE --progress
+          for PATH in "src" "bin"
+          do
+            rclone sync $PATH production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/$PATH \
+              --exclude **PACKAGES --exclude **PACKAGES.gz \
+              --checkers 8 --transfers 8 \
+              --progress
+          done
 
-      - name: Upload binaries.
+      - name: Upload metadata to finalize snapshots on March 15, June 15, September 15, and December 15.
         run: |
-          rclone sync bin production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/bin \
-            --checkers 8 --transfers 8 \
-            --progress
+          TODAY=$(date +'%m-%d')
+          if [[ "$TODAY" == "03-15" || "$TODAY" == "06-15" || "$TODAY" == "09-15" || "$TODAY" == "12-15" ]]; then
+            echo "Finalizing Production snapshot on $TODAY."
+            for PATH in "src" "bin"
+            do
+              rclone copy $PATH production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/$PATH \
+                --include **PACKAGES --include **PACKAGES.gz \
+                --checkers 8 --transfers 8 \
+                --progress
+            done
+            rclone copy snapshot.json production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE --progress
+          else
+            echo "Skipping metadata upload, $TODAY is not a Production snapshot day."
+            exit 0
+          fi
 
       - name: Update snapshot list.
         run: |
