@@ -120,7 +120,7 @@ jobs:
           if [[ "$TODAY" == "03-15" || "$TODAY" == "06-15" || "$TODAY" == "09-15" || "$TODAY" == "12-15" ]]; then
             echo "Finalizing Production snapshot on $TODAY."
             rclone copy staging: meta --include-from include-meta.txt $RCLONE_FLAGS
-            Rscript -e 'multiverse.internals::filter_packages(path = "meta", staged = "staged.json")'
+            Rscript -e 'multiverse.internals::filter_meta(path_meta = "meta", path_staging = getwd())'
             rclone copy meta production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE \
               --include-from include-meta.txt \
               $RCLONE_FLAGS
