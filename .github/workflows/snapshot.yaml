@@ -99,6 +99,14 @@ jobs:
       - name: Configure Rclone with the Staging universe.
         run: rclone config create staging alias remote=universe:r-multiverse-staging
 
+      - name: Write Rclone --include-from files.
+        shell: Rscript {0}
+        run: |
+          multiverse.internals::rclone_includes(
+            path_staging = getwd(),
+            repo_staging = "https://staging.r-multiverse.org"
+          )
+
       - name: Upload packages.
         run: |
           rclone copy staging: production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE \
@@ -114,7 +122,7 @@ jobs:
             rclone copy staging: meta \
               --include-from include-meta.txt \
               --ignore-size --progress
-            Rscript -e 'multiverse.internals::filter_packages(path = "meta", include = jsonlite::read_json("staged.json", simplifyVector = TRUE))'
+            Rscript -e 'multiverse.internals::filter_packages(path = "meta", staged = "staged.json")'
             rclone copy meta r2-test:r-multiverse-test/$DATE \
               --include-from include-meta.txt \
               --ignore-size --progress
