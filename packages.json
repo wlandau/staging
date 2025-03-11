@@ -112,7 +112,8 @@
   },
   {
     "package": "INLA",
-    "url": "https://github.com/inbo/INLA"
+    "url": "https://github.com/inbo/INLA",
+    "branch": "*release"
   },
   {
     "package": "jagstargets",
