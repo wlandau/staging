@@ -72,11 +72,7 @@ jobs:
 
       - name: Stage packages.
         shell: Rscript {0}
-        run: |
-          multiverse.internals::stage_candidates(
-            path_staging = getwd(),
-            repo_staging = "https://staging.r-multiverse.org"
-          )
+        run: multiverse.internals::stage_candidates(path_staging = getwd())
 
       - name: Commit and push changes.
         run: |
