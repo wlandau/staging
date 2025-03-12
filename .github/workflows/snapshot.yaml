@@ -102,11 +102,7 @@ jobs:
 
       - name: Write Rclone --include-from files.
         shell: Rscript {0}
-        run: |
-          multiverse.internals::rclone_includes(
-            path_staging = getwd(),
-            repo_staging = "https://staging.r-multiverse.org"
-          )
+        run: multiverse.internals::rclone_includes(path_staging = getwd())
 
       - name: Upload packages.
         run: |
