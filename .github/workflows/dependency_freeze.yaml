@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
   schedule:
     # 01-15 through 02-14:
-    - cron: '0 0 15-31 1 *' # every hour every day in January day 15 and after
-    - cron: '0 0 1-14 2 *'  # every hour every day in February day 14 and before
+    - cron: '0 * 15-31 1 *' # every hour every day in January day 15 and after
+    - cron: '0 * 1-14 2 *'  # every hour every day in February day 14 and before
     # 04-15 through 05-14:
-    - cron: '0 0 15-31 4 *' # every hour every day in April day 15 and after
-    - cron: '0 0 1-14 5 *'  # every hour every day in May day 14 and before
+    - cron: '0 * 15-31 4 *' # every hour every day in April day 15 and after
+    - cron: '0 * 1-14 5 *'  # every hour every day in May day 14 and before
     # 07-15 through 08-14:
-    - cron: '0 0 15-31 7 *' # every hour every day in July day 15 and after
-    - cron: '0 0 1-14 8 *'  # every hour every day in August day 14 and before
+    - cron: '0 * 15-31 7 *' # every hour every day in July day 15 and after
+    - cron: '0 * 1-14 8 *'  # every hour every day in August day 14 and before
     # 10-15 through 11-14:
-    - cron: '0 0 15-31 10 *' # every hour every day in October day 15 and after
-    - cron: '0 0 1-14 11 *' # every hour every day in November day 14 and before
+    - cron: '0 * 15-31 10 *' # every hour every day in October day 15 and after
+    - cron: '0 * 1-14 11 *' # every hour every day in November day 14 and before
 
 jobs:
   dependency_freeze:
