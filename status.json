@@ -208,8 +208,8 @@
     },
     "success": [false],
     "date": ["2025-03-07"],
-    "version": [],
-    "remote_hash": []
+    "version": [null],
+    "remote_hash": [null]
   },
   "jagstargets": {
     "success": [true],
