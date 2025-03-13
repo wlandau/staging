@@ -42,10 +42,10 @@ jobs:
           install.packages("pak")
           pak::pkg_install("r-multiverse/multiverse.internals@*release")
 
-      - name: Clone the Staging universe.
+      - name: Check out the Staging universe.
         uses: actions/checkout@v4
 
-      - name: Clone the Community universe.
+      - name: Check out the Community universe.
         uses: actions/checkout@v4
         with:
           repository: '${{ github.repository_owner }}/community'
