@@ -225,7 +225,7 @@
   },
   "litedown": {
     "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631294307"],
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13828284371"],
       "issues": {
         "linux": ["MISSING"],
         "source": ["FAILURE"]
