@@ -45,31 +45,6 @@ jobs:
       - name: Check out the staging universe.
         uses: actions/checkout@v4
 
-      - name: Record versions.
-        run: |
-          multiverse.internals::record_versions(
-            versions = "versions.json",
-            repo = "https://staging.r-multiverse.org"
-          )
-        shell: Rscript {0}
-
-      - name: Record status.
-        run: |
-          multiverse.internals::record_status(
-            repo = "https://staging.r-multiverse.org",
-            versions = "versions.json",
-            output = "status.json"
-          )
-        shell: Rscript {0}
-
-      - name: Record non-standard licenses.
-        run: |
-          multiverse.internals::record_nonstandard_licenses(
-            repo = "https://staging.r-multiverse.org",
-            path = "nonstandard_licenses.json"
-          )
-        shell: Rscript {0}
-
       - name: Stage packages.
         shell: Rscript {0}
         run: multiverse.internals::stage_candidates(path_staging = getwd())
