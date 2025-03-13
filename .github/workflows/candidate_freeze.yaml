@@ -53,12 +53,12 @@ jobs:
           )
         shell: Rscript {0}
 
-      - name: Record issues.
+      - name: Record status.
         run: |
-          multiverse.internals::record_issues(
+          multiverse.internals::record_status(
             repo = "https://staging.r-multiverse.org",
             versions = "versions.json",
-            output = "issues.json"
+            output = "status.json"
           )
         shell: Rscript {0}
 
