@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
   schedule:
     # 02-15 through 03-14:
-    - cron: '0 * 15-31 2 *' # minute 0 every hour in February day 15 and after
-    - cron: '0 * 1-14 3 *'  # minute 0 every hour in March day 14 and before
+    - cron: '0 * 15-31 2 *' # every hour in February day 15 and after
+    - cron: '0 * 1-14 3 *'  # every hour in March day 14 and before
     # 05-15 through 06-14:
-    - cron: '0 * 15-31 5 *' # minute 0 every hour in May day 15 and after
-    - cron: '0 * 1-14 6 *'  # minute 0 every hour in June day 14 and before
+    - cron: '0 * 15-31 5 *' # every hour in May day 15 and after
+    - cron: '0 * 1-14 6 *'  # every hour in June day 14 and before
     # 08-15 through 09-14:
-    - cron: '0 * 15-31 8 *' # minute 0 every hour in August day 15 and after
-    - cron: '0 * 1-14 9 *'  # minute 0 every hour in September day 14 and before
+    - cron: '0 * 15-31 8 *' # every hour in August day 15 and after
+    - cron: '0 * 1-14 9 *'  # every hour in September day 14 and before
     # 11-15 through 12-14:
-    - cron: '0 * 15-31 11 *' # minute 0 every hour in November day 15 and after
-    - cron: '0 * 1-14 12 *'  # minute 0 every hour in December day 14 and before
+    - cron: '0 * 15-31 11 *' # every hour in November day 15 and after
+    - cron: '0 * 1-14 12 *'  # every hour in December day 14 and before
 
 jobs:
   candidate_freeze:
