@@ -163,17 +163,10 @@
     "remote_hash": ["37a8c7844582bf6dbbc80bf960aa176e2c3e9435"]
   },
   "httpgd": {
-    "checks": {
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13631293331"],
-      "issues": {
-        "mac aarch64 R-4.4.3": ["ERROR"],
-        "mac x86_64 R-4.4.3": ["ERROR"]
-      }
-    },
-    "success": [false],
-    "published": ["2025-03-05 02:50:17.936 UTC"],
-    "version": ["2.0.2"],
-    "remote_hash": ["b0a5ec38638ca69e3adbc7b24d815757e5f74817"]
+    "success": [true],
+    "published": ["2025-03-16 02:57:53.015 UTC"],
+    "version": ["2.0.3"],
+    "remote_hash": ["7181a6fb9c863b710ebcf718f0585070aab5c194"]
   },
   "ichimoku": {
     "success": [true],
