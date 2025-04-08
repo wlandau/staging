@@ -1,13 +1,13 @@
 {
   "adbcbigquery": {
     "success": [true],
-    "published": ["2025-03-09 16:34:12.888 UTC"],
+    "published": ["2025-04-08 06:46:39.058 UTC"],
     "version": ["0.17.0"],
     "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
   "adbcdrivermanager": {
     "success": [true],
-    "published": ["2025-03-09 16:29:56.062 UTC"],
+    "published": ["2025-04-08 06:42:40.474 UTC"],
     "version": ["0.17.0"],
     "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
@@ -185,7 +185,7 @@
   },
   "INLA": {
     "success": [false],
-    "published": ["2025-03-09 02:29:37.000 UTC"],
+    "published": ["2025-04-08 02:53:00.970 UTC"],
     "version": ["19.09.03"],
     "remote_hash": ["0fa332471d2e19548cc0f63e36873e31dbd685be"],
     "r_cmd_check": {
@@ -195,7 +195,7 @@
         "win": ["MISSING"],
         "source": ["FAILURE"]
       },
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13710195681"]
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14323961052"]
     }
   },
   "jagstargets": {
@@ -256,7 +256,7 @@
   },
   "multiverse.internals": {
     "success": [true],
-    "published": ["2025-03-11 02:46:02.023 UTC"],
+    "published": ["2025-04-08 06:40:46.901 UTC"],
     "version": ["0.4.2"],
     "remote_hash": ["ae919e610a6dc01bd85cee85166b2637a0569bd9"]
   },
