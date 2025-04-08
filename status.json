@@ -13,13 +13,13 @@
   },
   "adbcflightsql": {
     "success": [true],
-    "published": ["2025-03-09 16:32:51.917 UTC"],
+    "published": ["2025-04-08 06:48:45.944 UTC"],
     "version": ["0.17.0"],
     "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
   "adbcsnowflake": {
     "success": [true],
-    "published": ["2025-03-09 16:34:04.591 UTC"],
+    "published": ["2025-04-08 06:50:50.460 UTC"],
     "version": ["0.17.0"],
     "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
@@ -211,16 +211,10 @@
     "remote_hash": ["d83e4118e0909618f416008dad4f3b3b89eead64"]
   },
   "litedown": {
-    "success": [false],
-    "published": ["2025-02-11 23:32:21.838 UTC"],
-    "version": ["0.5"],
-    "remote_hash": ["86944bd3c5edc1526183d870f241eb4dc6187d53"],
-    "r_cmd_check": {
-      "issues": {
-        "linux": ["MISSING"]
-      },
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13274518395"]
-    }
+    "success": [true],
+    "published": ["2025-04-08 07:26:21.052 UTC"],
+    "version": ["0.7"],
+    "remote_hash": ["637bdf024a413116174f09c25f7d366c4bd43a94"]
   },
   "loneliness": {
     "success": [false],
