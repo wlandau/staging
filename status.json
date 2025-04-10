@@ -19,7 +19,7 @@
   },
   "adbcsnowflake": {
     "success": [true],
-    "published": ["2025-04-09 02:53:09.937 UTC"],
+    "published": ["2025-04-10 02:51:15.571 UTC"],
     "version": ["0.17.0"],
     "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
   },
@@ -185,7 +185,7 @@
   },
   "INLA": {
     "success": [false],
-    "published": ["2025-04-09 02:54:27.381 UTC"],
+    "published": ["2025-04-10 02:53:29.329 UTC"],
     "version": ["19.09.03"],
     "remote_hash": ["0fa332471d2e19548cc0f63e36873e31dbd685be"],
     "r_cmd_check": {
