@@ -1,46 +1,106 @@
 {
   "adbcbigquery": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-08 06:46:39.058 UTC"],
     "version": ["0.17.0"],
-    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14326744855"]
+    },
+    "dependencies": {
+      "adbcdrivermanager": [],
+      "nanoarrow": ["adbcdrivermanager"]
+    }
   },
   "adbcdrivermanager": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-08 06:42:40.474 UTC"],
     "version": ["0.17.0"],
-    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14326744766"]
+    },
+    "dependencies": {
+      "nanoarrow": []
+    }
   },
   "adbcflightsql": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-08 06:48:45.944 UTC"],
     "version": ["0.17.0"],
-    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14326744764"]
+    },
+    "dependencies": {
+      "adbcdrivermanager": [],
+      "nanoarrow": ["adbcdrivermanager"]
+    }
   },
   "adbcsnowflake": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-10 02:51:15.571 UTC"],
     "version": ["0.17.0"],
-    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"]
+    "remote_hash": ["8b4ba558d1e9db9afbea6ef2d50acd979f647799"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14326744804"]
+    },
+    "dependencies": {
+      "adbcdrivermanager": [],
+      "nanoarrow": ["adbcdrivermanager"]
+    }
   },
   "arrow": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:57:39.553 UTC"],
     "version": ["19.0.1"],
-    "remote_hash": ["272715f6df2a042d69881ffa03d5078c58e4b345"]
+    "remote_hash": ["272715f6df2a042d69881ffa03d5078c58e4b345"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106390"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "asylum": {
     "success": [false],
     "published": ["2025-04-02 06:25:22.963 UTC"],
     "version": ["1.1.1"],
     "remote_hash": ["22064dd0822e007ef78cd29e9a118beb09e76da4"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212879969"]
+    },
     "cran": ["1.1.2"]
   },
   "audio.vadwebrtc": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:29:07.242 UTC"],
     "version": ["0.2"],
-    "remote_hash": ["c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba"]
+    "remote_hash": ["c3de76ddc738dbb4a80ac7ec67ac9da3cba093ba"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212879998"]
+    }
   },
   "audio.whisper": {
     "success": [false],
@@ -49,7 +109,7 @@
     "remote_hash": ["4b5c6a288c0f46a4cdc47f50d2d35395d3e32194"],
     "r_cmd_check": {
       "issues": {
-        "linux x86_64 R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac aarch64 R-4.4.3": ["WARNING"],
         "mac x86_64 R-4.4.3": ["WARNING"],
         "win x86_64 R-4.4.3": ["WARNING"]
@@ -65,7 +125,7 @@
     "remote_hash": ["b161ca7a1d417213b084c4a8c2d53fa44f7e8284"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["ERROR"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["ERROR"],
         "win R-4.4.3": ["ERROR"]
       },
@@ -73,10 +133,19 @@
     }
   },
   "cmdstanr": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:02:04.684 UTC"],
     "version": ["0.8.1"],
-    "remote_hash": ["02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"]
+    "remote_hash": ["02259ef7aa2a8b1c8de2fa3fc42a9feafd789288"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213336455"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "colorout": {
     "success": [false],
@@ -85,6 +154,7 @@
     "remote_hash": ["6eca95213c6cb2fae1c2c4eaccf43de4c93a65b5"],
     "r_cmd_check": {
       "issues": {
+        "linux": ["MISSING"],
         "mac aarch64 R-4.4.3": ["WARNING"],
         "mac x86_64 R-4.4.3": ["WARNING"],
         "win": ["MISSING"]
@@ -93,10 +163,22 @@
     }
   },
   "crew": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:29:34.424 UTC"],
     "version": ["1.0.0"],
-    "remote_hash": ["e28d0c782fbc22b3cd4129e5f30825a8a44c0f75"]
+    "remote_hash": ["e28d0c782fbc22b3cd4129e5f30825a8a44c0f75"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880225"]
+    },
+    "dependencies": {
+      "later": [],
+      "mirai": [],
+      "nanonext": ["mirai"],
+      "rlang": ["later"]
+    }
   },
   "demographr": {
     "success": [false],
@@ -105,7 +187,7 @@
     "remote_hash": ["5d73b83f4bd70048d39b6b9c4bffaf02c8aab321"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
@@ -113,10 +195,16 @@
     }
   },
   "duckdb": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:57:42.864 UTC"],
     "version": ["1.2.0"],
-    "remote_hash": ["d7b7108c2e526fa125669439cabc179021585d43"]
+    "remote_hash": ["d7b7108c2e526fa125669439cabc179021585d43"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106674"]
+    }
   },
   "geographr": {
     "success": [false],
@@ -125,11 +213,14 @@
     "remote_hash": ["ed416a6735f7c4d8da0b866260369e84c27319a2"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106072"]
+    },
+    "dependencies": {
+      "rlang": []
     }
   },
   "glaredb": {
@@ -139,9 +230,13 @@
     "remote_hash": ["349c5bb3a1fca6a8cefae381094b046c8ce028b2"],
     "r_cmd_check": {
       "issues": {
+        "linux": ["MISSING"],
         "win": ["MISSING"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106209"]
+    },
+    "dependencies": {
+      "nanoarrow": []
     }
   },
   "healthyr": {
@@ -151,7 +246,7 @@
     "remote_hash": ["37a8c7844582bf6dbbc80bf960aa176e2c3e9435"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
@@ -159,29 +254,66 @@
     }
   },
   "httpgd": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-03-17 02:52:49.450 UTC"],
     "version": ["2.0.3"],
-    "remote_hash": ["7181a6fb9c863b710ebcf718f0585070aab5c194"]
+    "remote_hash": ["7181a6fb9c863b710ebcf718f0585070aab5c194"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13877542745"]
+    },
+    "dependencies": {
+      "unigd": []
+    }
   },
   "ichimoku": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:04:02.838 UTC"],
     "version": ["1.5.5"],
-    "remote_hash": ["223c74e74a188c2e3d0a57a0700bd44b2468f404"]
+    "remote_hash": ["223c74e74a188c2e3d0a57a0700bd44b2468f404"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213336335"]
+    },
+    "dependencies": {
+      "mirai": [],
+      "nanonext": ["mirai"]
+    }
   },
   "igraph": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:57:12.444 UTC"],
     "version": ["2.1.4"],
-    "remote_hash": ["affdf8c714ace2e3b66dbcaee24ca2211633f964"]
+    "remote_hash": ["affdf8c714ace2e3b66dbcaee24ca2211633f964"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106407"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "IMD": {
     "success": [false],
     "published": ["2025-04-02 06:28:14.855 UTC"],
     "version": ["1.2.1"],
     "remote_hash": ["8cc26c4f70bf6e07c47bab089c7bad18c864223c"],
-    "cran": ["1.2.2"]
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880385"]
+    },
+    "cran": ["1.2.2"],
+    "dependencies": {
+      "rlang": []
+    }
   },
   "INLA": {
     "success": [false],
@@ -199,22 +331,46 @@
     }
   },
   "jagstargets": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:45:20.464 UTC"],
     "version": ["1.2.3"],
-    "remote_hash": ["fef92d0d74f6e9832459ce4bee69396bca21fd3f"]
+    "remote_hash": ["fef92d0d74f6e9832459ce4bee69396bca21fd3f"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213105948"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "later": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:31:33.878 UTC"],
     "version": ["1.4.1"],
-    "remote_hash": ["d83e4118e0909618f416008dad4f3b3b89eead64"]
+    "remote_hash": ["d83e4118e0909618f416008dad4f3b3b89eead64"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880488"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "litedown": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-08 07:26:21.052 UTC"],
     "version": ["0.7"],
-    "remote_hash": ["637bdf024a413116174f09c25f7d366c4bd43a94"]
+    "remote_hash": ["637bdf024a413116174f09c25f7d366c4bd43a94"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14327457696"]
+    }
   },
   "loneliness": {
     "success": [false],
@@ -223,7 +379,7 @@
     "remote_hash": ["330d200bf9de4a76ca1e82e3d84a3c5aba946707"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
@@ -231,70 +387,150 @@
     }
   },
   "milRex": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:32:52.414 UTC"],
     "version": ["1.1.0"],
-    "remote_hash": ["3a8c6096b0e162445f119fc2dfc46ff41d0089ba"]
+    "remote_hash": ["3a8c6096b0e162445f119fc2dfc46ff41d0089ba"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880665"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "mirai": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:25:42.414 UTC"],
     "version": ["2.1.0"],
-    "remote_hash": ["892c17106eab9411c720b50aaa56750cf8463dfc"]
+    "remote_hash": ["892c17106eab9411c720b50aaa56750cf8463dfc"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880031"]
+    },
+    "dependencies": {
+      "nanonext": []
+    }
   },
   "multitools": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:55:33.236 UTC"],
     "version": ["0.1.1"],
-    "remote_hash": ["c73b933868d8c6884df4220c25779cd0874ec7de"]
+    "remote_hash": ["c73b933868d8c6884df4220c25779cd0874ec7de"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213335999"]
+    }
   },
   "multiverse.internals": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-08 06:40:46.901 UTC"],
     "version": ["0.4.2"],
-    "remote_hash": ["ae919e610a6dc01bd85cee85166b2637a0569bd9"]
+    "remote_hash": ["ae919e610a6dc01bd85cee85166b2637a0569bd9"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14326745791"]
+    },
+    "dependencies": {
+      "igraph": [],
+      "nanonext": [],
+      "rlang": ["igraph"]
+    }
   },
   "nanoarrow": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:29:54.959 UTC"],
     "version": ["0.6.0"],
-    "remote_hash": ["33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"]
+    "remote_hash": ["33d2c8b973d8f8f424e02ac92ddeaace2a92f8dd"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880128"]
+    }
   },
   "nanonext": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:29:55.838 UTC"],
     "version": ["1.5.1"],
-    "remote_hash": ["71b26067dd5c73faac32168d5eacb0dc4979362e"]
+    "remote_hash": ["71b26067dd5c73faac32168d5eacb0dc4979362e"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880426"]
+    }
   },
   "polars": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:50:20.924 UTC"],
     "version": ["0.22.1"],
-    "remote_hash": ["815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"]
+    "remote_hash": ["815c74bbc64a1629b1418a05bbf3c96f8d4b3f7c"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106279"]
+    }
   },
   "prophet": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:09:19.755 UTC"],
     "version": ["1.1.6"],
-    "remote_hash": ["2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"]
+    "remote_hash": ["2a57e9d342fd1c28ed1fba32d8f0dfb199c4fa02"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213336590"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "prqlr": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:43:07.010 UTC"],
     "version": ["0.10.0"],
-    "remote_hash": ["09c7b87e0eabd77e0b7f2c74995fa79e27f2a176"]
+    "remote_hash": ["09c7b87e0eabd77e0b7f2c74995fa79e27f2a176"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213105698"]
+    }
   },
   "rJavaEnv": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:59:00.622 UTC"],
     "version": ["0.2.2"],
-    "remote_hash": ["bae1c6dea15b2f7750ae78d87ab0012a7772081f"]
+    "remote_hash": ["bae1c6dea15b2f7750ae78d87ab0012a7772081f"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213336218"]
+    }
   },
   "rlang": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:47:47.306 UTC"],
     "version": ["1.1.5"],
-    "remote_hash": ["119ce823eabd4ce3e834af0e7de4601703fdc214"]
+    "remote_hash": ["119ce823eabd4ce3e834af0e7de4601703fdc214"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213105854"]
+    }
   },
   "SBC": {
     "success": [false],
@@ -303,7 +539,7 @@
     "remote_hash": ["9ddc803105f5350dae6efb4ae2657e89d2a54aa8"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
@@ -317,37 +553,72 @@
     "remote_hash": ["638326106594be70c5f851c767349e4192740771"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106037"]
     },
-    "remotes": ["hyunjimoon/SBC", "stan-dev/cmdstanr"]
+    "remotes": ["hyunjimoon/SBC", "stan-dev/cmdstanr"],
+    "dependencies": {
+      "cmdstanr": [],
+      "rlang": ["cmdstanr"]
+    }
   },
   "string2path": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:33:18.611 UTC"],
     "version": ["0.2.0"],
-    "remote_hash": ["0187aba7afebd016d4d90a0f76c7032e74694e2c"]
+    "remote_hash": ["0187aba7afebd016d4d90a0f76c7032e74694e2c"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880445"]
+    }
   },
   "targetsketch": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:02:16.561 UTC"],
     "version": ["0.0.1"],
-    "remote_hash": ["a199a734b16f91726698a19e5f147f57f79cb2b6"]
+    "remote_hash": ["a199a734b16f91726698a19e5f147f57f79cb2b6"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213336217"]
+    }
   },
   "taxizedb": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:45:48.789 UTC"],
     "version": ["0.3.1"],
-    "remote_hash": ["5732f9777142cd0034b64d5ae8b9aea0605cfaab"]
+    "remote_hash": ["5732f9777142cd0034b64d5ae8b9aea0605cfaab"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106028"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "tidypolars": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:44:58.209 UTC"],
     "version": ["0.12.0"],
-    "remote_hash": ["4508d4d25685eed1ecee8a9450c9b804b34311ef"]
+    "remote_hash": ["4508d4d25685eed1ecee8a9450c9b804b34311ef"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106006"]
+    },
+    "dependencies": {
+      "polars": [],
+      "rlang": []
+    }
   },
   "tidytensor": {
     "success": [false],
@@ -356,24 +627,42 @@
     "remote_hash": ["14f5b87d2dfae20eb35cfd974adf660a4fd89980"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880609"]
+    },
+    "dependencies": {
+      "rlang": []
     }
   },
   "unigd": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:05:37.493 UTC"],
     "version": ["0.1.2"],
-    "remote_hash": ["c7d55c984624bdf89e385a2d86fcb93c692b400c"]
+    "remote_hash": ["c7d55c984624bdf89e385a2d86fcb93c692b400c"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213336076"]
+    }
   },
   "webchem": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:02:19.877 UTC"],
     "version": ["1.3.0"],
-    "remote_hash": ["5c177df9bd91d969e10da94a9c468933f899d140"]
+    "remote_hash": ["5c177df9bd91d969e10da94a9c468933f899d140"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213336564"]
+    },
+    "dependencies": {
+      "rlang": []
+    }
   },
   "webseq": {
     "success": [false],
@@ -382,7 +671,7 @@
     "remote_hash": ["b710f93da5b8dd8a30fa170cdf3da8da943fbae1"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["ERROR"],
         "win R-4.4.3": ["WARNING"]
       },
@@ -396,7 +685,7 @@
     "remote_hash": ["228c24be602b16073ff2bc8096d5df9d42dc6ea1"],
     "r_cmd_check": {
       "issues": {
-        "linux R-4.4.3": ["WARNING"],
+        "linux": ["MISSING"],
         "mac R-4.4.3": ["WARNING"],
         "win R-4.4.3": ["WARNING"]
       },
@@ -404,9 +693,15 @@
     }
   },
   "zstdlite": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:33:23.676 UTC"],
     "version": ["0.2.6"],
-    "remote_hash": ["585458ccbe36eaa179d8b30f04f1e3a91dc6b993"]
+    "remote_hash": ["585458ccbe36eaa179d8b30f04f1e3a91dc6b993"],
+    "r_cmd_check": {
+      "issues": {
+        "linux": ["MISSING"]
+      },
+      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880747"]
+    }
   }
 }
