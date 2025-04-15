@@ -58,15 +58,17 @@
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213106390"]
     },
+    "cran": ["19.0.1.1"],
     "dependencies": {
       "rlang": []
     }
   },
   "asylum": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:25:22.963 UTC"],
     "version": ["1.1.1"],
-    "remote_hash": ["22064dd0822e007ef78cd29e9a118beb09e76da4"]
+    "remote_hash": ["22064dd0822e007ef78cd29e9a118beb09e76da4"],
+    "cran": ["1.1.2"]
   },
   "audio.vadwebrtc": {
     "success": [true],
@@ -147,7 +149,10 @@
     "published": ["2025-04-02 06:29:34.424 UTC"],
     "version": ["1.0.0"],
     "remote_hash": ["e28d0c782fbc22b3cd4129e5f30825a8a44c0f75"],
+    "cran": ["1.1.0"],
     "dependencies": {
+      "later": [],
+      "mirai": [],
       "nanonext": ["mirai"],
       "rlang": ["later"]
     }
@@ -197,10 +202,11 @@
     }
   },
   "duckdb": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:57:42.864 UTC"],
     "version": ["1.2.0"],
-    "remote_hash": ["d7b7108c2e526fa125669439cabc179021585d43"]
+    "remote_hash": ["d7b7108c2e526fa125669439cabc179021585d43"],
+    "cran": ["1.2.1"]
   },
   "geographr": {
     "success": [false],
@@ -257,6 +263,10 @@
         "win x86_64 R-4.5.0": ["ERROR"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/13877542745"]
+    },
+    "cran": ["2.0.4"],
+    "dependencies": {
+      "unigd": []
     }
   },
   "ichimoku": {
@@ -264,7 +274,9 @@
     "published": ["2025-04-02 07:04:02.838 UTC"],
     "version": ["1.5.5"],
     "remote_hash": ["223c74e74a188c2e3d0a57a0700bd44b2468f404"],
+    "cran": ["1.5.6"],
     "dependencies": {
+      "mirai": [],
       "nanonext": ["mirai"]
     }
   },
@@ -282,6 +294,7 @@
     "published": ["2025-04-02 06:28:14.855 UTC"],
     "version": ["1.2.1"],
     "remote_hash": ["8cc26c4f70bf6e07c47bab089c7bad18c864223c"],
+    "cran": ["1.2.2"],
     "dependencies": {
       "rlang": []
     }
@@ -317,6 +330,7 @@
     "published": ["2025-04-02 06:31:33.878 UTC"],
     "version": ["1.4.1"],
     "remote_hash": ["d83e4118e0909618f416008dad4f3b3b89eead64"],
+    "cran": ["1.4.2"],
     "dependencies": {
       "rlang": []
     }
@@ -355,6 +369,7 @@
     "published": ["2025-04-02 06:25:42.414 UTC"],
     "version": ["2.1.0"],
     "remote_hash": ["892c17106eab9411c720b50aaa56750cf8463dfc"],
+    "cran": ["2.2.0"],
     "dependencies": {
       "nanonext": []
     }
@@ -393,7 +408,8 @@
         "win x86_64 R-4.5.0": ["WARNING"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880426"]
-    }
+    },
+    "cran": ["1.5.2"]
   },
   "polars": {
     "success": [false],
@@ -420,16 +436,18 @@
     }
   },
   "prqlr": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:43:07.010 UTC"],
     "version": ["0.10.0"],
-    "remote_hash": ["09c7b87e0eabd77e0b7f2c74995fa79e27f2a176"]
+    "remote_hash": ["09c7b87e0eabd77e0b7f2c74995fa79e27f2a176"],
+    "cran": ["0.10.1"]
   },
   "rJavaEnv": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 06:59:00.622 UTC"],
     "version": ["0.2.2"],
-    "remote_hash": ["bae1c6dea15b2f7750ae78d87ab0012a7772081f"]
+    "remote_hash": ["bae1c6dea15b2f7750ae78d87ab0012a7772081f"],
+    "cran": ["0.3.0"]
   },
   "rlang": {
     "success": [false],
@@ -443,7 +461,8 @@
         "win x86_64 R-4.5.0": ["ERROR"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14213105854"]
-    }
+    },
+    "cran": ["1.1.6"]
   },
   "Rvision": {
     "success": [false],
@@ -520,7 +539,8 @@
         "mac x86_64 R-4.5.0": ["WARNING"]
       },
       "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14212880445"]
-    }
+    },
+    "cran": ["0.2.2"]
   },
   "tarchetypes": {
     "success": [false],
@@ -599,10 +619,11 @@
     }
   },
   "unigd": {
-    "success": [true],
+    "success": [false],
     "published": ["2025-04-02 07:05:37.493 UTC"],
     "version": ["0.1.2"],
-    "remote_hash": ["c7d55c984624bdf89e385a2d86fcb93c692b400c"]
+    "remote_hash": ["c7d55c984624bdf89e385a2d86fcb93c692b400c"],
+    "cran": ["0.1.3"]
   },
   "webchem": {
     "success": [false],
