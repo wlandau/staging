@@ -56,6 +56,13 @@
     "hash_highest": "4b5c6a288c0f46a4cdc47f50d2d35395d3e32194"
   },
   {
+    "package": "autometric",
+    "version_current": "0.1.2",
+    "hash_current": "36e98ae76feb34de0783d6505f7f2a17e972fe23",
+    "version_highest": "0.1.2",
+    "hash_highest": "36e98ae76feb34de0783d6505f7f2a17e972fe23"
+  },
+  {
     "package": "bridgestan",
     "version_current": "2.6.1",
     "hash_current": "b161ca7a1d417213b084c4a8c2d53fa44f7e8284",
@@ -82,6 +89,20 @@
     "hash_current": "e28d0c782fbc22b3cd4129e5f30825a8a44c0f75",
     "version_highest": "1.0.0",
     "hash_highest": "e28d0c782fbc22b3cd4129e5f30825a8a44c0f75"
+  },
+  {
+    "package": "crew.aws.batch",
+    "version_current": "0.0.10",
+    "hash_current": "bc77f5f669e805efbd3dd595264841f73a48207a",
+    "version_highest": "0.0.10",
+    "hash_highest": "bc77f5f669e805efbd3dd595264841f73a48207a"
+  },
+  {
+    "package": "crew.cluster",
+    "version_current": "0.3.7",
+    "hash_current": "0999b6ebdaa89606d63115998cd373313b4d3f40",
+    "version_highest": "0.3.7",
+    "hash_highest": "0999b6ebdaa89606d63115998cd373313b4d3f40"
   },
   {
     "package": "demographr",
@@ -259,6 +280,20 @@
     "hash_highest": "119ce823eabd4ce3e834af0e7de4601703fdc214"
   },
   {
+    "package": "Rvision",
+    "version_current": "0.8.0",
+    "hash_current": "972627f8aac8a0eb95f8b166e316cb9b0ee5930c",
+    "version_highest": "0.8.0",
+    "hash_highest": "972627f8aac8a0eb95f8b166e316cb9b0ee5930c"
+  },
+  {
+    "package": "rwasm",
+    "version_current": "0.2.0",
+    "hash_current": "a7079cbfd10428e18486578d3c309c9fd69f6d97",
+    "version_highest": "0.2.0",
+    "hash_highest": "a7079cbfd10428e18486578d3c309c9fd69f6d97"
+  },
+  {
     "package": "SBC",
     "version_current": "0.3.0.9000",
     "hash_current": "9ddc803105f5350dae6efb4ae2657e89d2a54aa8",
@@ -278,6 +313,20 @@
     "hash_current": "0187aba7afebd016d4d90a0f76c7032e74694e2c",
     "version_highest": "0.2.0",
     "hash_highest": "0187aba7afebd016d4d90a0f76c7032e74694e2c"
+  },
+  {
+    "package": "tarchetypes",
+    "version_current": "0.13.0",
+    "hash_current": "52e20f0fcdd3ad4433b359235086aea2cc8a15d8",
+    "version_highest": "0.13.0",
+    "hash_highest": "52e20f0fcdd3ad4433b359235086aea2cc8a15d8"
+  },
+  {
+    "package": "targets",
+    "version_current": "1.11.2",
+    "hash_current": "a8ebfa3a31c7fef4515433b9699c6d633c3bb0ea",
+    "version_highest": "1.11.2",
+    "hash_highest": "a8ebfa3a31c7fef4515433b9699c6d633c3bb0ea"
   },
   {
     "package": "targetsketch",
