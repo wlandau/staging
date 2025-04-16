@@ -169,11 +169,10 @@
     }
   },
   "duckdb": {
-    "success": [false],
-    "published": ["2025-04-02 07:57:42.864 UTC"],
-    "version": ["1.2.0"],
-    "remote_hash": ["d7b7108c2e526fa125669439cabc179021585d43"],
-    "cran": ["1.2.1"]
+    "success": [true],
+    "published": ["2025-04-16 04:21:58.230 UTC"],
+    "version": ["1.2.1"],
+    "remote_hash": ["34717c6d81e443cb01417cf41842052d7da298dd"]
   },
   "geographr": {
     "success": [false],
