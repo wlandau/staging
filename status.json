@@ -301,18 +301,10 @@
     "remote_hash": ["c73b933868d8c6884df4220c25779cd0874ec7de"]
   },
   "multiverse.internals": {
-    "success": [false],
-    "published": ["2025-04-17 03:01:24.151 UTC"],
-    "version": ["1.0.8"],
-    "remote_hash": ["af1cbfcd7cd069424890ad7e166a29e8a7b0934a"],
-    "r_cmd_check": {
-      "issues": {
-        "linux R-4.5.0": ["ERROR"],
-        "mac R-4.5.0": ["ERROR"],
-        "win R-4.5.0": ["ERROR"]
-      },
-      "url": ["https://github.com/r-universe/r-multiverse-staging/actions/runs/14459258786"]
-    }
+    "success": [true],
+    "published": ["2025-04-17 21:36:33.634 UTC"],
+    "version": ["1.0.9"],
+    "remote_hash": ["f2bda3577e04c22b2df328edaec24b1f96067371"]
   },
   "nanoarrow": {
     "success": [true],
