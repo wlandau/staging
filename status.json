@@ -290,7 +290,7 @@
   },
   "mirai": {
     "success": [true],
-    "published": ["2025-04-16 02:58:20.852 UTC"],
+    "published": ["2025-04-18 05:53:58.684 UTC"],
     "version": ["2.2.0"],
     "remote_hash": ["06c062f0bc239da1a3781560a65c230f0ef7805f"]
   },
@@ -412,7 +412,7 @@
   },
   "targets": {
     "success": [true],
-    "published": ["2025-04-16 03:49:46.872 UTC"],
+    "published": ["2025-04-18 06:25:21.694 UTC"],
     "version": ["1.11.2"],
     "remote_hash": ["a8ebfa3a31c7fef4515433b9699c6d633c3bb0ea"]
   },
