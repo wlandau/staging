@@ -1,0 +1,58 @@
+# Removes old binaries from the R2 bucket.
+name: binaries
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 22 3 *'  # 12:00 AM on March 22
+    - cron: '0 0 22 6 *'  # 12:00 AM on June 22
+    - cron: '0 0 22 9 *'  # 12:00 AM on September 22
+    - cron: '0 0 22 12 *' # 12:00 AM on December 22
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_KEEP_PKG_SOURCE: yes
+      RCLONE_FLAGS: "--checkers 8 --transfers 8 --ignore-size --progress"
+
+    steps:
+      - name: Update existing system libraries.
+        run: sudo apt-get update
+
+      - name: Install Rclone.
+        run: sudo -v; curl https://rclone.org/install.sh | sudo bash
+
+      - name: Store snapshot date as environment variable.
+        run: echo "DATE=$(Rscript -e 'cat(multiverse.internals::meta_snapshot()$snapshot)')" >> $GITHUB_ENV
+
+      - name: Print target snapshot date.
+        run: echo $DATE
+
+      - name: Check out the staging universe.
+        uses: actions/checkout@v4
+
+      - name: Configure Rclone with R2.
+        run: |
+          rclone config create production s3 \
+            provider=Cloudflare \
+            access_key_id=${{ secrets.CLOUDFLARE_ACCESS_KEY_ID }} \
+            secret_access_key=${{ secrets.CLOUDFLARE_SECRET_ACCESS_KEY }} \
+            endpoint=https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            acl=private \
+            no_check_bucket=true
+
+      - name: Delete binaries more than a year old.
+        run: |
+          CUTOFF=$(date -d '1 year ago' +%Y-%m-%d)
+          rclone lsf production:${{ secrets.CLOUDFLARE_BUCKET }} --dirs-only --dir-slash=false |
+            grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' |
+            awk -v cutoff="$CUTOFF" '$0 <= cutoff' |
+            while read -r DATE
+            do
+              echo "Removing old binaries from $DATE/bin"
+              rclone delete --rmdirs production:${{ secrets.CLOUDFLARE_BUCKET }}/$DATE/bin
+            done
