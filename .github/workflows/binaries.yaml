@@ -50,7 +50,7 @@ jobs:
           CUTOFF=$(date -d '1 year ago' +%Y-%m-%d)
           rclone lsf production:${{ secrets.CLOUDFLARE_BUCKET }} --dirs-only --dir-slash=false |
             grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' |
-            awk -v cutoff="$CUTOFF" '$0 <= cutoff' |
+            awk -v cutoff="$CUTOFF" '$0 < cutoff' |
             while read -r DATE
             do
               echo "Removing old binaries from $DATE/bin"
